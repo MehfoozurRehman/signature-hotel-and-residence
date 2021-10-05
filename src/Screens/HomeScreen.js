@@ -6,6 +6,7 @@ import ring from "../Assets/ring.png";
 import contactImg from "../Assets/contactImg.png";
 import apartmentPic from "../Assets/apartmentPic.png";
 import sorroundingImg from "../Assets/sorroundingImg.png";
+import main__backgound from "../Assets/main__backgound.png";
 import BuildingDetailPic from "../Assets/BuildingDetailPic.png";
 import photoGalleryImg1 from "../Assets/photo-gallery/1.png";
 import photoGalleryImg2 from "../Assets/photo-gallery/2.png";
@@ -119,10 +120,43 @@ function PhotoGallery() {
   );
 }
 export default class HomeScreen extends Component {
+  // constructor() {
+  //   super();
+  //   this.state = {
+  //     isScrolling: false,
+  //   };
+  // }
+  // componentDidMount() {
+  //   if (window.scrollY > 0) {
+  //     this.setState({
+  //       isScrolling: true,
+  //     });
+  //   } else if (window.scrollY === 0) {
+  //     this.setState({
+  //       isScrolling: false,
+  //     });
+  //   }
+  // }
   render() {
+    // window.addEventListener("scroll", () => {
+    //   if (window.scrollY > 0) {
+    //     this.setState({
+    //       isScrolling: true,
+    //     });
+    //   } else if (window.scrollY === 0) {
+    //     this.setState({
+    //       isScrolling: false,
+    //     });
+    //   }
+    // });
     return (
       <div className="App">
-        <div className="header">
+        <div
+          // className={
+          //   this.state.isScrolling ? "header header__active" : "header"
+          // }
+          className="header"
+        >
           <a href="#" className="header__logo">
             <img src={logo} alt="logo" className="header__logo__img" />
           </a>
@@ -136,9 +170,12 @@ export default class HomeScreen extends Component {
             <a href="#" className="nav__header__link">
               Features
             </a>
-            <button className="nav__header__btn">Construction Update</button>
+            <button type="button" className="nav__header__btn">
+              Construction Update
+            </button>
           </div>
         </div>
+        <div className="main__section__container"></div>
         <div className="apartment__details__container">
           <img
             src={ring}
@@ -292,6 +329,7 @@ export default class HomeScreen extends Component {
             </form>
           </div>
         </div>
+
         <div className="banner__container">
           <img
             src={bannerImg}
