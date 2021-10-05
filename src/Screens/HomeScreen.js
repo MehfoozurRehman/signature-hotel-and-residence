@@ -4,6 +4,8 @@ import logo from "../Assets/logo.svg";
 import bannerImg from "../Assets/bannerImg.png";
 import ring from "../Assets/ring.png";
 import contactImg from "../Assets/contactImg.png";
+import apartmentPic from "../Assets/apartmentPic.png";
+import sorroundingImg from "../Assets/sorroundingImg.png";
 import BuildingDetailPic from "../Assets/BuildingDetailPic.png";
 import photoGalleryImg1 from "../Assets/photo-gallery/1.png";
 import photoGalleryImg2 from "../Assets/photo-gallery/2.png";
@@ -11,6 +13,7 @@ import photoGalleryImg3 from "../Assets/photo-gallery/3.png";
 import photoGalleryImg4 from "../Assets/photo-gallery/4.png";
 import photoGalleryImg5 from "../Assets/photo-gallery/5.png";
 import photoGalleryImg6 from "../Assets/photo-gallery/6.png";
+import MultiRangeSlider from "multi-range-slider-react";
 
 function BuildingDetailsCard({ svg, Heading, subHeading }) {
   return (
@@ -23,6 +26,47 @@ function BuildingDetailsCard({ svg, Heading, subHeading }) {
         </div>
         <div className="building__details__container__wrapper__card__content__bottom">
           {subHeading}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function BuildingDimensionsEntry({ defaultChecked }) {
+  return (
+    <div className="apartment__details__container__wrapper__content__middle__entry__wrapper">
+      <input
+        type="radio"
+        defaultChecked={defaultChecked}
+        className="apartment__details__container__wrapper__content__middle__entry__input"
+        name="apartment__details__container__wrapper__content__middle__entry__input"
+      />
+      <div className="apartment__details__container__wrapper__content__middle__entry">
+        <div className="apartment__details__container__wrapper__content__middle__entry__content">
+          <div className="apartment__details__container__wrapper__content__middle__entry__content__value">
+            60 m <sup>2</sup>
+          </div>
+          <div className="apartment__details__container__wrapper__content__middle__entry__content__label">
+            Space
+          </div>
+        </div>
+        <div className="apartment__details__container__wrapper__content__middle__entry__bar"></div>
+        <div className="apartment__details__container__wrapper__content__middle__entry__content">
+          <div className="apartment__details__container__wrapper__content__middle__entry__content__value">
+            03
+          </div>
+          <div className="apartment__details__container__wrapper__content__middle__entry__content__label">
+            Rooms
+          </div>
+        </div>
+        <div className="apartment__details__container__wrapper__content__middle__entry__bar"></div>
+        <div className="apartment__details__container__wrapper__content__middle__entry__content">
+          <div className="apartment__details__container__wrapper__content__middle__entry__content__value">
+            Rs 3000
+          </div>
+          <div className="apartment__details__container__wrapper__content__middle__entry__content__label">
+            Per m <sup>2</sup>
+          </div>
         </div>
       </div>
     </div>
@@ -93,6 +137,159 @@ export default class HomeScreen extends Component {
               Features
             </a>
             <button className="nav__header__btn">Construction Update</button>
+          </div>
+        </div>
+        <div className="apartment__details__container">
+          <img
+            src={ring}
+            alt="ring"
+            className="apartment__details__container__img"
+          />
+          <div className="apartment__details__container__wrapper">
+            <form className="apartment__details__container__wrapper__content">
+              <div className="apartment__details__container__wrapper__content__left">
+                <div className="apartment__details__container__wrapper__content__left__heading">
+                  Choose your Preferred floor or use filter selection
+                </div>
+                <div className="apartment__details__container__wrapper__content__left__row">
+                  <div className="apartment__details__container__wrapper__content__left__sub__heading">
+                    Rooms
+                  </div>
+                  <select
+                    name=""
+                    id=""
+                    className="apartment__details__container__wrapper__content__left__select"
+                  >
+                    <option value="">All</option>
+                    <option value="">All</option>
+                    <option value="">All</option>
+                    <option value="">All</option>
+                    <option value="">All</option>
+                  </select>
+                </div>
+                <div className="apartment__details__container__wrapper__content__left__range">
+                  <div className="apartment__details__container__wrapper__content__left__range__heading">
+                    Rooms
+                  </div>
+                  <MultiRangeSlider
+                    min={0}
+                    max={100}
+                    ruler={false}
+                    label={true}
+                    preventWheel={false}
+                  />
+                </div>
+                <div className="apartment__details__container__wrapper__content__left__range">
+                  <div className="apartment__details__container__wrapper__content__left__range__heading">
+                    Rooms
+                  </div>
+                  <MultiRangeSlider
+                    min={0}
+                    max={100}
+                    ruler={false}
+                    label={true}
+                    preventWheel={false}
+                  />
+                </div>
+                <button className="apartment__details__container__wrapper__content__left__button">
+                  View Details
+                </button>
+              </div>
+              <div className="apartment__details__container__wrapper__content__middle">
+                <BuildingDimensionsEntry defaultChecked={true} />
+                <BuildingDimensionsEntry />
+                <BuildingDimensionsEntry />
+                <BuildingDimensionsEntry />
+                <BuildingDimensionsEntry />
+              </div>
+              <div className="apartment__details__container__wrapper__content__right">
+                <div className="apartment__details__container__wrapper__content__right__heading">
+                  Apartments - Comforts
+                </div>
+                <img
+                  src={apartmentPic}
+                  alt="apartmentPic"
+                  className="apartment__details__container__wrapper__content__right__img"
+                />
+                <div className="apartment__details__container__wrapper__content__right__tabs">
+                  <div className="apartment__details__container__wrapper__content_right__tabs__entry">
+                    <input
+                      type="radio"
+                      className="apartment__details__container__wrapper__content_right__tabs__entry__input"
+                      name="apartment__details__container__wrapper__content_right__tabs__entry__input"
+                      defaultChecked={true}
+                    />
+
+                    <div className="apartment__details__container__wrapper__content_right__tabs__entry__content">
+                      Visual
+                    </div>
+                  </div>
+                  <div className="apartment__details__container__wrapper__content_right__tabs__entry">
+                    <input
+                      type="radio"
+                      className="apartment__details__container__wrapper__content_right__tabs__entry__input"
+                      name="apartment__details__container__wrapper__content_right__tabs__entry__input"
+                    />
+                    <div className="apartment__details__container__wrapper__content_right__tabs__entry__content">
+                      Plan
+                    </div>
+                  </div>
+                  <div className="apartment__details__container__wrapper__content_right__tabs__entry">
+                    <input
+                      type="radio"
+                      className="apartment__details__container__wrapper__content_right__tabs__entry__input"
+                      name="apartment__details__container__wrapper__content_right__tabs__entry__input"
+                    />
+
+                    <div className="apartment__details__container__wrapper__content_right__tabs__entry__content">
+                      Flor
+                    </div>
+                  </div>
+                </div>
+                <div className="apartment__details__container__wrapper__content__right__data__row">
+                  <div className="apartment__details__container__wrapper__content__right__data__row__label">
+                    Total Area
+                  </div>
+                  <div className="apartment__details__container__wrapper__content__right__data__row__value">
+                    60m <sup>2</sup>
+                  </div>
+                  <div className="apartment__details__container__wrapper__content__right__data__row__label">
+                    Tower
+                  </div>
+                  <div className="apartment__details__container__wrapper__content__right__data__row__value">
+                    East
+                  </div>
+                </div>
+                <div className="apartment__details__container__wrapper__content__right__data__row">
+                  <div className="apartment__details__container__wrapper__content__right__data__row__label">
+                    Total Area
+                  </div>
+                  <div className="apartment__details__container__wrapper__content__right__data__row__value">
+                    60m <sup>2</sup>
+                  </div>
+                  <div className="apartment__details__container__wrapper__content__right__data__row__label">
+                    Tower
+                  </div>
+                  <div className="apartment__details__container__wrapper__content__right__data__row__value">
+                    East
+                  </div>
+                </div>
+                <div className="apartment__details__container__wrapper__content__right__data__row">
+                  <div className="apartment__details__container__wrapper__content__right__data__row__label">
+                    Total Area
+                  </div>
+                  <div className="apartment__details__container__wrapper__content__right__data__row__value">
+                    60m <sup>2</sup>
+                  </div>
+                  <div className="apartment__details__container__wrapper__content__right__data__row__label">
+                    Tower
+                  </div>
+                  <div className="apartment__details__container__wrapper__content__right__data__row__value">
+                    East
+                  </div>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
         <div className="banner__container">
@@ -715,6 +912,74 @@ export default class HomeScreen extends Component {
             alt="ring"
             className="banner__container__content__ring__logo"
           />
+        </div>
+        <div className="surrounding__container">
+          <img src={ring} alt="ring" className="surrounding__container__img" />
+          <div className="surrounding__container__wrapper">
+            <img
+              src={sorroundingImg}
+              alt="sorroundingImg"
+              className="surrounding__container__wrapper__img"
+            />
+            <div className="surrounding__container__wrapper__details">
+              <div className="surrounding__container__wrapper__details__entry">
+                <div className="surrounding__container__wrapper__details__entry__label">
+                  New Airport
+                </div>
+                <div className="surrounding__container__wrapper__details__entry__value">
+                  2km
+                </div>
+              </div>
+              <div className="surrounding__container__wrapper__details__entry">
+                <div className="surrounding__container__wrapper__details__entry__label">
+                  New Airport
+                </div>
+                <div className="surrounding__container__wrapper__details__entry__value">
+                  2km
+                </div>
+              </div>
+              <div className="surrounding__container__wrapper__details__entry">
+                <div className="surrounding__container__wrapper__details__entry__label">
+                  New Airport
+                </div>
+                <div className="surrounding__container__wrapper__details__entry__value">
+                  2km
+                </div>
+              </div>
+              <div className="surrounding__container__wrapper__details__entry">
+                <div className="surrounding__container__wrapper__details__entry__label">
+                  New Airport
+                </div>
+                <div className="surrounding__container__wrapper__details__entry__value">
+                  2km
+                </div>
+              </div>
+              <div className="surrounding__container__wrapper__details__entry">
+                <div className="surrounding__container__wrapper__details__entry__label">
+                  New Airport
+                </div>
+                <div className="surrounding__container__wrapper__details__entry__value">
+                  2km
+                </div>
+              </div>
+              <div className="surrounding__container__wrapper__details__entry">
+                <div className="surrounding__container__wrapper__details__entry__label">
+                  New Airport
+                </div>
+                <div className="surrounding__container__wrapper__details__entry__value">
+                  2km
+                </div>
+              </div>
+              <div className="surrounding__container__wrapper__details__entry">
+                <div className="surrounding__container__wrapper__details__entry__label">
+                  New Airport
+                </div>
+                <div className="surrounding__container__wrapper__details__entry__value">
+                  2km
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="photo__gallery__container">
           <div className="photo__gallery__container__heading">
