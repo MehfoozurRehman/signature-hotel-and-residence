@@ -95,6 +95,84 @@ a {
   transition: 200ms ease-in-out;
   box-shadow: 0px 0px 30px rgba(223, 180, 73, 1);
 }
+.welcome__container {
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+}
+.welcome__container__img {
+  width: 100%;
+  height: 100%;
+}
+.welcome__container__wrapper {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  padding: 0em 8em;
+}
+.welcome__container__wrapper__content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 35%;
+}
+.welcome__container__wrapper__link {
+  width: 48%;
+  background: rgba(0, 0, 0, 0.29);
+  height: 150px;
+  border-radius: 10px;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.welcome__container__wrapper__link span {
+  margin-top: 1em;
+  font-size: 16px;
+  color: #dfb449;
+}
+.welcome__container__wrapper__link:hover {
+  transition: 400ms ease-in-out;
+  background: linear-gradient(#dfb449, #ecce6d);
+}
+.welcome__container__wrapper__link:hover span {
+  color: #000000;
+}
+.building__back {
+  position: absolute;
+  top: 250px;
+  left: 1200px;
+  z-index: 5;
+}
+.building__front {
+  position: absolute;
+  top: 55px;
+  left: 780px;
+  z-index: 20;
+}
+.building__ring {
+  position: absolute;
+  top: 250px;
+  left: 1050px;
+  z-index: 10;
+  animation: animatering 5s;
+}
+@keyframes animatering {
+  from {
+    left: 800px;
+    opacity: 0;
+  }
+  to {
+    left: 1050px;
+    opacity: 1;
+  }
+}
 .main__section__container {
   display: flex;
   position: relative;
@@ -1480,6 +1558,35 @@ a {
   color: #000000;
   font-weight: bold;
 }
+@media (max-width: 1366px) {
+  .building__back {
+    top: 50px;
+    left: 820px;
+    transform: scale(0.8);
+  }
+  .building__front {
+    top: -120px;
+    left: 490px;
+    transform: scale(0.8);
+  }
+
+  .building__ring {
+    top: 140px;
+    left: 700px;
+    transform: scale(0.8);
+    animation: animatering 5s;
+  }
+  @keyframes animatering {
+    from {
+      left: 500px;
+      opacity: 0;
+    }
+    to {
+      left: 700px;
+      opacity: 1;
+    }
+  }
+}
 @media (max-width: 1200px) {
   .header {
     padding: 0.5em 1em;
@@ -1493,6 +1600,10 @@ a {
   }
   .transport__container__wrapper__img {
     width: fit-content;
+  }
+  .welcome__container__img {
+    width: fit-content;
+    height: 100%;
   }
   .transport__container__wrapper__content {
     padding: 3em;
@@ -1743,6 +1854,49 @@ a {
   .main__section__our__vision__wrapper__left {
     width: 100%;
     margin-top: 2em;
+  }
+  .welcome__container {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  .welcome__container__img {
+    width: fit-content;
+    height: 100%;
+    margin-left: -800px;
+  }
+  .welcome__container__wrapper {
+    width: 100%;
+    padding: 8em 4em;
+  }
+  .welcome__container__wrapper__content {
+    width: 100%;
+  }
+  .building__back {
+    top: 50px;
+    left: 820px;
+    transform: scale(0.8);
+  }
+  .building__front {
+    top: -120px;
+    left: 490px;
+    transform: scale(0.8);
+  }
+
+  .building__ring {
+    top: 140px;
+    left: 700px;
+    transform: scale(0.8);
+    animation: animatering 5s;
+  }
+  @keyframes animatering {
+    from {
+      left: 500px;
+      opacity: 0;
+    }
+    to {
+      left: 700px;
+      opacity: 1;
+    }
   }
   .plans__container__content__card {
     width: 100%;
