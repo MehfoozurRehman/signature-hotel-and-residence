@@ -2,7 +2,7 @@ import React, { Component, useState, useCallback } from "react";
 import ImageViewer from "react-simple-image-viewer";
 import ring from "../Assets/ring.png";
 import contactImg from "../Assets/contactImg.png";
-import BuildingDetailPic from "../Assets/BuildingDetailPic.png";
+import map_img from "../Assets/map_img.png";
 import photoGalleryImg1 from "../Assets/photo-gallery/1.png";
 import photoGalleryImg2 from "../Assets/photo-gallery/2.png";
 import photoGalleryImg3 from "../Assets/photo-gallery/3.png";
@@ -114,59 +114,61 @@ export default class HomeScreen extends Component {
       <div className="App">
         <Header />
         <div className="map__container">
-          <img src="" alt="" className="map__container__img" />
-          <div className="map__container__details">
-            <div className="map__container__details__entry">
-              <div className="map__container__details__entry__label">
-                New Airport
+          <div className="map__container__content">
+            <img src={map_img} alt="map_img" className="map__container__img" />
+            <div className="map__container__details">
+              <div className="map__container__details__entry">
+                <div className="map__container__details__entry__label">
+                  New Airport
+                </div>
+                <div className="map__container__details__entry__value">2km</div>
               </div>
-              <div className="map__container__details__entry__value">2km</div>
-            </div>
-            <div className="map__container__details__entry">
-              <div className="map__container__details__entry__label">
-                New Airport
+              <div className="map__container__details__entry">
+                <div className="map__container__details__entry__label">
+                  New Airport
+                </div>
+                <div className="map__container__details__entry__value">2km</div>
               </div>
-              <div className="map__container__details__entry__value">2km</div>
-            </div>
-            <div className="map__container__details__entry">
-              <div className="map__container__details__entry__label">
-                New Airport
+              <div className="map__container__details__entry">
+                <div className="map__container__details__entry__label">
+                  New Airport
+                </div>
+                <div className="map__container__details__entry__value">2km</div>
               </div>
-              <div className="map__container__details__entry__value">2km</div>
-            </div>
-            <div className="map__container__details__entry">
-              <div className="map__container__details__entry__label">
-                New Airport
+              <div className="map__container__details__entry">
+                <div className="map__container__details__entry__label">
+                  New Airport
+                </div>
+                <div className="map__container__details__entry__value">2km</div>
               </div>
-              <div className="map__container__details__entry__value">2km</div>
-            </div>
-            <div className="map__container__details__entry">
-              <div className="map__container__details__entry__label">
-                New Airport
+              <div className="map__container__details__entry">
+                <div className="map__container__details__entry__label">
+                  New Airport
+                </div>
+                <div className="map__container__details__entry__value">2km</div>
               </div>
-              <div className="map__container__details__entry__value">2km</div>
-            </div>
-            <div className="map__container__details__entry">
-              <div className="map__container__details__entry__label">
-                New Airport
+              <div className="map__container__details__entry">
+                <div className="map__container__details__entry__label">
+                  New Airport
+                </div>
+                <div className="map__container__details__entry__value">2km</div>
               </div>
-              <div className="map__container__details__entry__value">2km</div>
-            </div>
-            <div className="map__container__details__entry">
-              <div className="map__container__details__entry__label">
-                New Airport
+              <div className="map__container__details__entry">
+                <div className="map__container__details__entry__label">
+                  New Airport
+                </div>
+                <div className="map__container__details__entry__value">2km</div>
               </div>
-              <div className="map__container__details__entry__value">2km</div>
-            </div>
-            <div className="map__container__details__entry">
-              <div className="map__container__details__entry__label">
-                New Airport
+              <div className="map__container__details__entry">
+                <div className="map__container__details__entry__label">
+                  New Airport
+                </div>
+                <div className="map__container__details__entry__value">2km</div>
               </div>
-              <div className="map__container__details__entry__value">2km</div>
             </div>
           </div>
         </div>
-        <div className="contact__container">
+        <div className="contact__container contact__container__second">
           <div className="contact__container__content">
             <form action="" className="contact__container__content__form">
               <div className="contact__container__content__form__left">
@@ -188,6 +190,7 @@ export default class HomeScreen extends Component {
                     placeholder="Name"
                     className="contact__container__content__form__input"
                   />
+                  <div className="contact__container__content__form__row__spacer"></div>
                   <input
                     type="tel"
                     placeholder="Phone"
@@ -217,7 +220,6 @@ export default class HomeScreen extends Component {
                 <div className="contact__container__content__form__right__map">
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217759.48983069125!2d74.1943041387545!3d31.483156883765346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190483e58107d9%3A0xc23abe6ccc7e2462!2sLahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1633512469580!5m2!1sen!2s"
-                    allowfullscreen=""
                     loading="lazy"
                   ></iframe>
                   <div className="contact__container__content__form__right__bottom__content">

@@ -20,7 +20,7 @@ export default class App extends Component {
             <Route path="/home">
               <HomeScreen />
             </Route>
-            <Route path="/services">
+            <Route path="/features">
               <ServicesScreen />
             </Route>
             <Route path="/location">

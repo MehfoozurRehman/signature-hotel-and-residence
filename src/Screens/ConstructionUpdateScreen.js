@@ -2,7 +2,9 @@ import React, { Component, useState, useCallback } from "react";
 import ImageViewer from "react-simple-image-viewer";
 import ring from "../Assets/ring.png";
 import contactImg from "../Assets/contactImg.png";
-import BuildingDetailPic from "../Assets/BuildingDetailPic.png";
+import plansImage1 from "../Assets/plans/1.png";
+import plansImage2 from "../Assets/plans/2.png";
+import plansImage3 from "../Assets/plans/3.png";
 import photoGalleryImg1 from "../Assets/photo-gallery/1.png";
 import photoGalleryImg2 from "../Assets/photo-gallery/2.png";
 import photoGalleryImg3 from "../Assets/photo-gallery/3.png";
@@ -40,44 +42,6 @@ function ConstructionUpdateControl({ defaultChecked, onChange }) {
     </div>
   );
 }
-
-function BuildingDetailsCard({ svg, Heading, subHeading }) {
-  return (
-    <div className="building__details__container__wrapper__card">
-      {svg}
-
-      <div className="building__details__container__wrapper__card__content">
-        <div className="building__details__container__wrapper__card__content__top">
-          {Heading}
-        </div>
-        <div className="building__details__container__wrapper__card__content__bottom">
-          {subHeading}
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function ServicesCarouselControl({ defaultChecked, svg, text, onChange }) {
-  return (
-    <div className="transport__container__wrapper__controls__entry">
-      <input
-        type="radio"
-        onChange={onChange}
-        defaultChecked={defaultChecked}
-        className="transport__container__wrapper__controls__entry__input"
-        name="transport__container__wrapper__controls__entry__input"
-      />
-      <div className="transport__container__wrapper__controls__entry__content">
-        {svg}
-        <div className="transport__container__wrapper__controls__entry__text">
-          {text}
-        </div>
-      </div>
-    </div>
-  );
-}
-
 function PhotoGallery() {
   const [currentImage, setCurrentImage] = useState(0);
   const [isViewerOpen, setIsViewerOpen] = useState(false);
@@ -355,6 +319,68 @@ export default class ConstructionUpdateScreen extends Component {
                     });
                   }}
                 />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="plans__container">
+          <div className="plans__container__heading">Upcoming Plans</div>
+          <div className="plans__container__content">
+            <div className="plans__container__content__card">
+              <img
+                src={plansImage1}
+                alt="plansImage"
+                className="plans__container__content__card__img"
+              />
+              <div className="plans__container__content__card__content">
+                <div className="plans__container__content__card__content__heading">
+                  Project Name
+                </div>
+                <div className="plans__container__content__card__content__info">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. It has survived not only five
+                </div>
+              </div>
+            </div>
+            <div className="plans__container__content__card">
+              <img
+                src={plansImage1}
+                alt="plansImage"
+                className="plans__container__content__card__img"
+              />
+              <div className="plans__container__content__card__content">
+                <div className="plans__container__content__card__content__heading">
+                  Project Name
+                </div>
+                <div className="plans__container__content__card__content__info">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. It has survived not only five
+                </div>
+              </div>
+            </div>
+            <div className="plans__container__content__card">
+              <img
+                src={plansImage2}
+                alt="plansImage"
+                className="plans__container__content__card__img"
+              />
+              <div className="plans__container__content__card__content">
+                <div className="plans__container__content__card__content__heading">
+                  Project Name
+                </div>
+                <div className="plans__container__content__card__content__info">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. It has survived not only five
+                </div>
               </div>
             </div>
           </div>

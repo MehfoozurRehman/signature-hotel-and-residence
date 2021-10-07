@@ -726,6 +726,7 @@ a {
 .contact__container__content__form {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: white;
   padding: 3em;
   height: fit-content;
@@ -764,6 +765,9 @@ a {
   align-items: center;
   margin-top: 1.5em;
 }
+.contact__container__content__form__row__spacer {
+  width: 2em;
+}
 .contact__container__content__form__input {
   display: flex;
   width: 100%;
@@ -771,8 +775,8 @@ a {
   height: 40px;
   border: 1px solid #f7f7f7;
   outline: none;
-  border-radius: 10px;
-  padding: 0px 10px;
+  border-radius: 5px;
+  padding: 0px 1em;
   transition: 200ms;
 }
 .contact__container__content__form__input:hover {
@@ -824,8 +828,12 @@ a {
   display: flex;
   width: 45%;
 }
+.contact__container__content__form__right__map {
+  width: 100%;
+  height: 80%;
+}
 .contact__container__content__form__right__map iframe {
-  width: 530px;
+  min-width: 100%;
   height: 400px;
   border-radius: 20px;
   border: none;
@@ -1126,10 +1134,8 @@ a {
   background: linear-gradient(90deg, #dfb449, #ecce6d);
   color: #242424;
 }
-.contact__container {
-  // background-color: #242424;
-  height: 100vh;
-  width: 100vw;
+.contact__container__second {
+  background-color: #000000;
 }
 .construction__update__container {
   width: 100vw;
@@ -1276,6 +1282,63 @@ a {
   position: absolute;
   top: 47px;
 }
+.plans__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #000000;
+  padding: 3em 0em;
+}
+.plans__container__heading {
+  text-align: center;
+  font-size: 25px;
+  color: #ffffff;
+  margin-bottom: 3em;
+}
+.plans__container__content {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5em;
+}
+.plans__container__content__card {
+  width: 32%;
+  height: fit-content;
+  border-radius: 15px;
+  background: transparent;
+  cursor: pointer;
+}
+.plans__container__content__card__img {
+  width: 100%;
+  border-radius: 15px;
+}
+.plans__container__content__card__content {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+.plans__container__content__card__content__heading {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+.plans__container__content__card__content__info {
+  font-size: 16px;
+  color: #ffffff;
+}
+.plans__container__content__card:hover {
+  transition: 200ms ease-in-out;
+  background: linear-gradient(
+    90deg,
+    rgba(223, 180, 73, 0.2),
+    rgba(236, 206, 109, 0.2)
+  );
+}
 .main__section__container__about__us {
   position: absolute;
   top: -15%;
@@ -1371,6 +1434,48 @@ a {
   width: 50%;
   height: 200px;
 }
+.map__container {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(#530e36, #000000, #000000);
+  padding: 8em 0em;
+}
+.map__container__content {
+  width: 80%;
+  position: relative;
+  height: 100%;
+}
+.map__container__img {
+  width: 100%;
+  height: 100%;
+}
+.map__container__details {
+  width: 350px;
+  position: absolute;
+  top: 25%;
+  right: -150px;
+  background: linear-gradient(#dfb449, #ecce6d);
+  border-radius: 30px;
+  padding: 2em;
+}
+.map__container__details__entry {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+.map__container__details__entry:last-child {
+  margin-bottom: 0em;
+}
+.map__container__details__entry__label {
+  font-size: 16px;
+  color: #000000;
+}
+.map__container__details__entry__value {
+  font-size: 16px;
+  color: #000000;
+  font-weight: bold;
+}
 @media (max-width: 1200px) {
   .header {
     padding: 0.5em 1em;
@@ -1411,6 +1516,33 @@ a {
   }
 }
 @media (max-width: 1000px) {
+  .map__container {
+    height: fit-content;
+  }
+  .map__container__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+  }
+  .map__container__img {
+    height: fit-content;
+  }
+  .map__container__details {
+    margin-top: 2em;
+    position: relative;
+    width: 80%;
+    left: 0px;
+  }
+  .plans__container__content {
+    padding: 1em;
+    flex-wrap: wrap;
+  }
+  .plans__container__content__card {
+    width: 48%;
+    margin-bottom: 2em;
+  }
   .transport__container__wrapper__controls {
     flex-wrap: wrap;
     bottom: -100px;
@@ -1491,6 +1623,28 @@ a {
   }
 }
 @media (max-width: 800px) {
+  .contact__container__second {
+    height: 1250px;
+  }
+  .contact__container__content__form {
+    flex-direction: column;
+    margin-top: 2em;
+  }
+  .contact__container__content__form__row {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 98px;
+  }
+  .contact__container__content__form__row__spacer {
+    width: 0px;
+  }
+  .contact__container__content__form__left {
+    width: 100%;
+  }
+  .contact__container__content__form__right {
+    margin-top: 2em;
+    width: 100%;
+  }
   .building__details__container {
     height: 1100px !important;
   }
@@ -1530,6 +1684,9 @@ a {
   }
 }
 @media (max-width: 700px) {
+  .plans__container__content__card {
+    width: 100%;
+  }
   .main__section__container__img {
     margin-left: -110%;
   }
