@@ -4,6 +4,9 @@ const HomeScreen = lazy(() => import("./Screens/HomeScreen"));
 const WelcomeScreen = lazy(() => import("./Screens/WelcomeScreen"));
 const ServicesScreen = lazy(() => import("./Screens/ServicesScreen"));
 const LocationScreen = lazy(() => import("./Screens/LocationScreen"));
+const ConstructionUpdateScreen = lazy(() =>
+  import("./Screens/ConstructionUpdateScreen")
+);
 export default class App extends Component {
   render() {
     return (
@@ -21,6 +24,9 @@ export default class App extends Component {
             </Route>
             <Route path="/location">
               <LocationScreen />
+            </Route>
+            <Route path="/construction_update">
+              <ConstructionUpdateScreen />
             </Route>
           </Switch>
         </Router>

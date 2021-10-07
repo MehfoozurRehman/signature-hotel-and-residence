@@ -16,6 +16,7 @@ import photoGalleryImg5 from "../Assets/photo-gallery/5.png";
 import photoGalleryImg6 from "../Assets/photo-gallery/6.png";
 import MultiRangeSlider from "multi-range-slider-react";
 import Header from "../Components/Header";
+import Footer from "../Components/Footer";
 
 function BuildingDetailsCard({ svg, Heading, subHeading }) {
   return (
@@ -1161,13 +1162,7 @@ export default class HomeScreen extends Component {
             </div>
           </div>
         </div>
-        <div className="footer__container">
-          <div className="footer__container__bar">
-            <div className="footer__container__bar__entry"></div>
-            <div className="footer__container__bar__entry__active"></div>
-            <div className="footer__container__bar__entry"></div>
-          </div>
-        </div>
+        <Footer />
       </div>
     );
   }

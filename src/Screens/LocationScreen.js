@@ -11,6 +11,7 @@ import photoGalleryImg5 from "../Assets/photo-gallery/5.png";
 import photoGalleryImg6 from "../Assets/photo-gallery/6.png";
 import services__background__Img1 from "../Assets/services__background__Img1.png";
 import Header from "../Components/Header";
+import Footer from "../Components/Footer";
 import { Link } from "react-router-dom";
 
 function BuildingDetailsCard({ svg, Heading, subHeading }) {
@@ -368,13 +369,7 @@ export default class HomeScreen extends Component {
             </form>
           </div>
         </div>
-        <div className="footer__container">
-          <div className="footer__container__bar">
-            <div className="footer__container__bar__entry"></div>
-            <div className="footer__container__bar__entry__active"></div>
-            <div className="footer__container__bar__entry"></div>
-          </div>
-        </div>
+        <Footer />
       </div>
     );
   }
