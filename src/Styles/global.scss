@@ -912,6 +912,7 @@ a {
 }
 .contact__container__wrapper__left__wrapper__img {
   border-radius: 20px;
+  width: 100%;
 }
 .contact__container__wrapper__right {
   width: 400px;
@@ -1346,10 +1347,17 @@ a {
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0em 12em;
+}
+.main__section__container__about__us__wrapper {
+  display: flex;
+  max-width: 1200px;
+  padding: 0em 4em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .main__section__container__about__us__heading {
   font-size: 30px;
@@ -1383,7 +1391,7 @@ a {
 }
 .main__section__our__vision__wrapper {
   width: 70%;
-  height: 1000px;
+  height: 900px;
   justify-content: center;
   text-align: center;
   padding: 6em 3em;
@@ -1403,20 +1411,16 @@ a {
   margin-top: 0.5em;
   width: 100%;
 }
-.about__pic2 {
-  width: 100%;
-}
 .main__section__our__vision__ring {
   position: absolute;
   width: 40%;
   height: 80%;
-  top: 20%;
+  top: 30%;
   opacity: 0.2;
 }
 .our__vision__headings {
   font-size: 30px;
   color: #530934;
-  padding: 0em 8em;
 }
 .our__vision__sub__heading {
   font-size: 14px;
@@ -1514,8 +1518,26 @@ a {
   .building__details__container__wrapper__card {
     width: 48%;
   }
+  .contact__container__wrapper {
+    padding: 2em;
+  }
+  .main__section__our__vision__wrapper {
+    width: 85%;
+  }
 }
 @media (max-width: 1000px) {
+  .main__section__our__vision__wrapper {
+    width: 90%;
+  }
+  .contact__container__wrapper {
+    padding: 2em;
+  }
+  .contact__container__wrapper__left {
+    width: 45%;
+  }
+  .contact__container__wrapper__left__wrapper__heading {
+    font-size: 25px;
+  }
   .map__container {
     height: fit-content;
   }
@@ -1623,6 +1645,28 @@ a {
   }
 }
 @media (max-width: 800px) {
+  .main__section__our__vision__wrapper {
+    width: 95%;
+  }
+  .main__section__container__about__us__wrapper {
+    text-align: center;
+  }
+  .contact__container {
+    height: 1100px;
+  }
+  .contact__container__wrapper {
+    flex-direction: column !important;
+    padding: 2em;
+    margin-top: 6em;
+  }
+  .contact__container__wrapper__left {
+    width: 100%;
+  }
+  .contact__container__wrapper__right {
+    width: 100%;
+    margin-top: 2em;
+    z-index: 3;
+  }
   .contact__container__second {
     height: 1250px;
   }
@@ -1684,6 +1728,22 @@ a {
   }
 }
 @media (max-width: 700px) {
+  .main__section__our__vision__wrapper {
+    width: 100%;
+    height: 1100px;
+  }
+  .main__section__our__vision__wrapper__content {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .main__section__our__vision__wrapper__right {
+    display: flex;
+    width: 100%;
+  }
+  .main__section__our__vision__wrapper__left {
+    width: 100%;
+    margin-top: 2em;
+  }
   .plans__container__content__card {
     width: 100%;
   }
