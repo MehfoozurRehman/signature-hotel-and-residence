@@ -108,7 +108,7 @@ export default class Header extends Component {
                 : "header__nav"
             }
           >
-            <Link to="/about" className="nav__header__link">
+            <Link to="/about-us" className="nav__header__link">
               About Signature
             </Link>
             <Link to="/services" className="nav__header__link">

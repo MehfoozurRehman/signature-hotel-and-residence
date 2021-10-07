@@ -1,5 +1,6 @@
 import React, { Component, lazy, Suspense } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import AboutUsScreen from "./Screens/AboutUsScreen";
 const HomeScreen = lazy(() => import("./Screens/HomeScreen"));
 const WelcomeScreen = lazy(() => import("./Screens/WelcomeScreen"));
 const ServicesScreen = lazy(() => import("./Screens/ServicesScreen"));
@@ -27,6 +28,9 @@ export default class App extends Component {
             </Route>
             <Route path="/construction_update">
               <ConstructionUpdateScreen />
+            </Route>
+            <Route path="/about-us">
+              <AboutUsScreen />
             </Route>
           </Switch>
         </Router>
