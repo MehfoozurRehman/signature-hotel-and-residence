@@ -1558,6 +1558,99 @@ a {
   color: #000000;
   font-weight: bold;
 }
+.youtube__video__container {
+  margin-top: -10vh;
+  width: 100vw;
+  height: fit-content;
+  background: linear-gradient(#000000, #000000, #350520);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4em 0em;
+}
+.youtube__video__container iframe {
+  width: 100%;
+  max-width: 1200px;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+}
+.hotel__services__container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #350520;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hotel__services__container__content {
+  width: 100%;
+  max-width: 1200px;
+}
+.hotel__services__container__content__heading {
+  font-size: 30px;
+  color: #dfb449;
+  margin-bottom: 1em;
+  position: relative;
+  width: fit-content;
+  max-width: 50%;
+}
+.hotel__services__container__content__heading::after {
+  content: "";
+  top: 40px;
+  background-color: #dfb449;
+  left: 0px;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+}
+.hotel__services__container__content__info {
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 2em;
+  max-width: 50%;
+}
+.hotel__services__container__content__icons {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2em;
+  width: 25%;
+  justify-content: space-between;
+}
+.hotel__services__container__content__icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hotel__services__container__content__button {
+  cursor: pointer;
+  width: 150px;
+  height: 45px;
+  color: #000000;
+  background: linear-gradient(#dfb449, #ecce6d);
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 2em;
+}
+.hotel__services__container__content__button:hover {
+  transition: 200ms ease-in-out;
+  box-shadow: 0px 0px 30px rgba(223, 180, 73, 1);
+}
+.hotel__services__container__content__gallery {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  justify-content: space-between;
+}
+.hotel__services__container__content__gallery__img {
+  width: 32%;
+}
 @media (max-width: 1366px) {
   .building__back {
     top: 50px;
@@ -1829,6 +1922,8 @@ a {
     margin-left: -50%;
   }
   .main__section__container__wrap {
+    padding: 8em 0em;
+    justify-content: center;
     background: linear-gradient(rgba(83, 9, 52, 0.5), rgba(228, 228, 228, 0.1));
   }
   .banner__content__wrapper {
@@ -1858,6 +1953,7 @@ a {
   .welcome__container {
     width: 100vw;
     overflow-x: hidden;
+    max-height: 100vh;
   }
   .welcome__container__img {
     width: fit-content;
