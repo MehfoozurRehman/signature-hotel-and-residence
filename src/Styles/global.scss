@@ -547,7 +547,6 @@ a {
   position: relative;
 }
 .banner__container__img {
-  display: flex;
   height: 100%;
   width: 100%;
 }
@@ -650,14 +649,14 @@ a {
 .building__details__container {
   background-color: #530934;
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   overflow: hidden;
 }
 .building__details__container__content__img {
   position: absolute;
   bottom: -150px;
-  left: -550px;
+  left: -780px;
 }
 .building__details__container__wrapper {
   position: absolute;
@@ -751,8 +750,9 @@ a {
 }
 .photo__gallery__container {
   width: 100vw;
-  height: 100vh;
+  height: fit-content;
   display: flex;
+  padding: 4em 0em;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -780,7 +780,8 @@ a {
 }
 .contact__container {
   width: 100vw;
-  height: 100vh;
+  height: fit-content;
+  min-height: 650px;
   position: relative;
 }
 .contact__container__img {
@@ -1561,12 +1562,11 @@ a {
 .youtube__video__container {
   margin-top: -10vh;
   width: 100vw;
+  padding-top: 10em;
   height: fit-content;
   background: linear-gradient(#000000, #000000, #350520);
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 4em 0em;
 }
 .youtube__video__container iframe {
   width: 100%;
@@ -1576,7 +1576,8 @@ a {
 }
 .hotel__services__container {
   width: 100vw;
-  height: 100vh;
+  height: fit-content;
+  padding: 10em 0em;
   background-color: #350520;
   display: flex;
   align-items: center;
@@ -1651,6 +1652,89 @@ a {
 .hotel__services__container__content__gallery__img {
   width: 32%;
 }
+.building__container__img {
+  width: 100%;
+  height: fit-content;
+}
+.home__features__container {
+  width: 100vw;
+  height: fit-content;
+  margin-top: 7em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home__features__container__left {
+  width: 50%;
+  max-width: 760px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5em;
+  margin-right: 2em;
+}
+.home__features__container__left__heading {
+  font-size: 30px;
+  color: #350520;
+  position: relative;
+  margin-bottom: 1em;
+}
+.home__features__container__left__heading::after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 0px;
+  width: 100px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: #dfb449;
+}
+.home__features__container__left__info {
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 1em;
+}
+.home__features__container__left__buttons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.home__features__container__left__button {
+  width: 140px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: linear-gradient(#ffffff, #ecce6d);
+  border: none;
+  margin-bottom: 2em;
+  margin-right: 1em;
+  color: #350520;
+  cursor: pointer;
+}
+.home__features__container__left__button span {
+  margin-top: 1em;
+  color: #000000;
+}
+.home__features__container__left__button:hover {
+  transition: 200ms ease-in-out;
+  background: linear-gradient(#dfb449, #ecce6d);
+  color: #ffffff;
+}
+.home__features__container__left__button:hover span {
+  color: #ffffff;
+}
+.home__features__container__right {
+  flex: 1;
+  max-width: 1000px;
+  margin-right: -50px;
+}
+@media (max-width: 1600px) {
+  .building__details__container__content__img {
+    left: -900px;
+  }
+}
 @media (max-width: 1366px) {
   .building__back {
     top: 50px;
@@ -1681,6 +1765,70 @@ a {
   }
 }
 @media (max-width: 1200px) {
+  .building__details__container__content__img {
+    left: -1000px;
+  }
+  .surrounding__container {
+    height: 1180px;
+    padding: 5em 0em;
+  }
+  .surrounding__container__wrapper {
+    flex-direction: column;
+  }
+  .surrounding__container__wrapper__img {
+    border-radius: 30px;
+    width: 80%;
+  }
+  .surrounding__container__wrapper__details {
+    width: 100%;
+    max-width: 80%;
+    margin-right: 0em;
+  }
+  .home__features__container {
+    flex-direction: column;
+  }
+  .home__features__container__left {
+    width: 100%;
+    max-width: 80%;
+    margin: 0em;
+  }
+  .home__features__container__right {
+    width: 100%;
+    max-width: 80%;
+    margin-right: 0px;
+    margin-top: 3em;
+  }
+  .home__features__container__left__buttons {
+    justify-content: space-evenly;
+  }
+  .home__features__container__left__button {
+    margin-right: 0em;
+  }
+  .apartment__details__container {
+    height: fit-content;
+  }
+  .apartment__details__container__wrapper {
+    height: fit-content;
+  }
+  .apartment__details__container__wrapper__content {
+    flex-wrap: wrap;
+    height: fit-content;
+    padding: 3em;
+  }
+  .apartment__details__container__wrapper__content__left {
+    min-width: 48%;
+    max-width: 48%;
+  }
+  .apartment__details__container__wrapper__content__middle {
+    min-width: 48%;
+    max-width: 48%;
+    margin: 0em;
+  }
+  .apartment__details__container__wrapper__content__right {
+    margin-top: 3em;
+    min-width: 50%;
+    max-width: 50%;
+  }
   .header {
     padding: 0.5em 1em;
     padding-right: 2em;
@@ -1730,6 +1878,10 @@ a {
   }
 }
 @media (max-width: 1000px) {
+  .banner__container__img {
+    width: fit-content;
+    margin-left: -300px;
+  }
   .main__section__our__vision__wrapper {
     width: 90%;
   }
@@ -1849,6 +2001,28 @@ a {
   }
 }
 @media (max-width: 800px) {
+  .building__details__container__content__img {
+    left: -1100px;
+  }
+  .surrounding__container {
+    height: 1050px;
+  }
+  .surrounding__container__wrapper__img {
+    height: fit-content;
+  }
+  .apartment__details__container__wrapper__content__left {
+    min-width: 100%;
+    max-width: 100%;
+    margin-bottom: 3em;
+  }
+  .apartment__details__container__wrapper__content__middle {
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .apartment__details__container__wrapper__content__right {
+    min-width: 100%;
+    max-width: 100%;
+  }
   .main__section__our__vision__wrapper {
     width: 95%;
   }
@@ -1934,6 +2108,9 @@ a {
   }
 }
 @media (max-width: 700px) {
+  .banner__container__img {
+    margin-left: -400px;
+  }
   .main__section__our__vision__wrapper {
     width: 100%;
     height: 1100px;
