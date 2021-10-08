@@ -1734,6 +1734,67 @@ a {
   .building__details__container__content__img {
     left: -900px;
   }
+  .building__back {
+    top: 120px;
+    left: 970px;
+    transform: scale(0.9);
+  }
+  .building__front {
+    top: -50px;
+    left: 600px;
+    transform: scale(0.9);
+  }
+
+  .building__ring {
+    top: 140px;
+    left: 830px;
+    transform: scale(0.9);
+    animation: animatering 5s;
+  }
+  @keyframes animatering {
+    from {
+      left: 700px;
+      opacity: 0;
+    }
+    to {
+      left: 830px;
+      opacity: 1;
+    }
+  }
+}
+@media (max-width: 1440px) {
+  .welcome__container__img {
+    width: fit-content;
+    height: 100%;
+    margin-left: -200px;
+  }
+  .building__back {
+    top: 250px;
+    left: 1000px;
+    transform: scale(1);
+  }
+  .building__front {
+    top: 62px;
+    left: 580px;
+    transform: scale(1);
+  }
+
+  .building__ring {
+    top: 270px;
+    left: 830px;
+    transform: scale(1);
+    animation: animatering 5s;
+  }
+  @keyframes animatering {
+    from {
+      left: 700px;
+      opacity: 0;
+    }
+    to {
+      left: 830px;
+      opacity: 1;
+    }
+  }
 }
 @media (max-width: 1366px) {
   .building__back {
