@@ -1,6 +1,6 @@
 import React, { Component, useState, useCallback } from "react";
 import ImageViewer from "react-simple-image-viewer";
-import logo from "../Assets/logo.svg";
+import buildingwhole from "../Assets/buildingwhole.png";
 import bannerImg from "../Assets/bannerImg.png";
 import ring from "../Assets/ring.png";
 import contactImg from "../Assets/contactImg.png";
@@ -15,6 +15,7 @@ import photoGalleryImg4 from "../Assets/photo-gallery/4.png";
 import photoGalleryImg5 from "../Assets/photo-gallery/5.png";
 import photoGalleryImg6 from "../Assets/photo-gallery/6.png";
 import buildingfullimg from "../Assets/buildingfullimg.png";
+import strip1 from "../Assets/strip1.png";
 import MultiRangeSlider from "multi-range-slider-react";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
@@ -510,6 +511,141 @@ export default class HomeScreen extends Component {
                 className="hotel__services__container__content__gallery__img"
               />
             </div>
+          </div>
+          <img
+            src={buildingwhole}
+            alt="buildingwhole"
+            className="hotel__services__container__building"
+          />
+          <div className="hotel__services__container__building__btns">
+            <button className="hotel__services__container__building__btn">
+              1
+              <img
+                src={strip1}
+                alt="strip"
+                className="hotel__services__container__strip1"
+              />
+            </button>
+            <button className="hotel__services__container__building__btn">
+              2
+              <img
+                src={strip1}
+                alt="strip"
+                className="hotel__services__container__strip1"
+              />
+            </button>
+            <button className="hotel__services__container__building__btn">
+              3
+              <img
+                src={strip1}
+                alt="strip"
+                className="hotel__services__container__strip1"
+              />
+            </button>
+            <button className="hotel__services__container__building__btn">
+              4
+              <img
+                src={strip1}
+                alt="strip"
+                className="hotel__services__container__strip1"
+              />
+            </button>
+            <button className="hotel__services__container__building__btn">
+              5
+              <img
+                src={strip1}
+                alt="strip"
+                className="hotel__services__container__strip1"
+              />
+            </button>
+            <button className="hotel__services__container__building__btn">
+              6
+              <img
+                src={strip1}
+                alt="strip"
+                className="hotel__services__container__strip1"
+              />
+            </button>
+            <button className="hotel__services__container__building__btn">
+              7
+              <img
+                src={strip1}
+                alt="strip"
+                className="hotel__services__container__strip1"
+              />
+            </button>
+            <button className="hotel__services__container__building__btn">
+              8
+              <img
+                src={strip1}
+                alt="strip"
+                className="hotel__services__container__strip1"
+              />
+            </button>
+            <button className="hotel__services__container__building__btn">
+              9
+              <img
+                src={strip1}
+                alt="strip"
+                className="hotel__services__container__strip1"
+              />
+            </button>
+            <button className="hotel__services__container__building__btn">
+              10
+              <img
+                src={strip1}
+                alt="strip"
+                className="hotel__services__container__strip1"
+              />
+            </button>
+            <button className="hotel__services__container__building__btn">
+              10
+              <img
+                src={strip1}
+                alt="strip"
+                className="hotel__services__container__strip1"
+              />
+            </button>
+            <button className="hotel__services__container__building__btn">
+              11
+              <img
+                src={strip1}
+                alt="strip"
+                className="hotel__services__container__strip1"
+              />
+            </button>
+            <button className="hotel__services__container__building__btn">
+              12
+              <img
+                src={strip1}
+                alt="strip"
+                className="hotel__services__container__strip1"
+              />
+            </button>
+            <button className="hotel__services__container__building__btn">
+              13
+              <img
+                src={strip1}
+                alt="strip"
+                className="hotel__services__container__strip1"
+              />
+            </button>
+            <button className="hotel__services__container__building__btn">
+              14
+              <img
+                src={strip1}
+                alt="strip"
+                className="hotel__services__container__strip1"
+              />
+            </button>
+            <button className="hotel__services__container__building__btn">
+              15
+              <img
+                src={strip1}
+                alt="strip"
+                className="hotel__services__container__strip1"
+              />
+            </button>
           </div>
         </div>
         <div className="apartment__details__container">
