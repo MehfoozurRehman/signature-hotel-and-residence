@@ -16,6 +16,23 @@ import photoGalleryImg5 from "../Assets/photo-gallery/5.png";
 import photoGalleryImg6 from "../Assets/photo-gallery/6.png";
 import buildingfullimg from "../Assets/buildingfullimg.png";
 import strip1 from "../Assets/strip1.png";
+import strip2 from "../Assets/strip2.png";
+import strip3 from "../Assets/strip3.png";
+import strip4 from "../Assets/strip4.png";
+import strip5 from "../Assets/strip5.png";
+import strip6 from "../Assets/strip6.png";
+import strip7 from "../Assets/strip7.png";
+import strip8 from "../Assets/strip8.png";
+import strip9 from "../Assets/strip9.png";
+import strip10 from "../Assets/strip10.png";
+import strip11 from "../Assets/strip11.png";
+import strip12 from "../Assets/strip12.png";
+import strip13 from "../Assets/strip13.png";
+import strip14 from "../Assets/strip14.png";
+import strip15 from "../Assets/strip15.png";
+import strip16 from "../Assets/strip16.png";
+import strip17 from "../Assets/strip17.png";
+import strip18 from "../Assets/strip18.png";
 import MultiRangeSlider from "multi-range-slider-react";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
@@ -130,6 +147,10 @@ export default class HomeScreen extends Component {
     this.state = {
       isScrolling: false,
       isHeaderOpen: window.innerWidth > 1000,
+      isManagementFloorSelected: false,
+      isSuitesFloorSelected: false,
+      isServiceFloorSelected: false,
+      isShopFloorSelected: false,
     };
   }
   render() {
@@ -520,132 +541,689 @@ export default class HomeScreen extends Component {
           />
           <div className="hotel__services__container__building__btns">
             <button className="heading hotel__services__container__building__btn">
-              1
+              18
+              <input
+                type="radio"
+                name="hotel__services__container__building__btn__section1"
+                // disabled={!this.state.isManagementFloorSelected}
+                checked={this.state.isManagementFloorSelected}
+                onChange={() => {
+                  this.setState({
+                    isManagementFloorSelected: true,
+                    isSuitesFloorSelected: false,
+                    isServiceFloorSelected: false,
+                    isShopFloorSelected: false,
+                  });
+                }}
+                id=""
+                className="hotel__services__container__building__btn__input"
+              />
               <img
                 src={strip1}
                 alt="strip"
                 className="hotel__services__container__strip1"
+                style={
+                  this.state.isManagementFloorSelected === false
+                    ? { opacity: 0 }
+                    : null
+                }
               />
+              <div className="hotel__services__container__building__btn__popup">
+                <div className="hotel__services__container__building__btn__popup__heading">
+                  13th Floor
+                </div>
+                <div className="hotel__services__container__building__btn__popup__status">
+                  <span>11/14 Free</span>
+                  <span>Apartment</span>
+                </div>
+              </div>
             </button>
             <button className="heading hotel__services__container__building__btn">
-              2
+              17
+              <input
+                type="radio"
+                name="hotel__services__container__building__btn__section2"
+                id=""
+                // disabled={!this.state.isSuitesFloorSelected}
+                // defaultChecked{this.state.isSuitesFloorSelected}
+                checked={this.state.isSuitesFloorSelected}
+                onChange={() => {
+                  this.setState({
+                    isManagementFloorSelected: false,
+                    isSuitesFloorSelected: true,
+                    isServiceFloorSelected: false,
+                    isShopFloorSelected: false,
+                  });
+                }}
+                className="hotel__services__container__building__btn__input"
+              />
               <img
-                src={strip1}
+                src={strip2}
                 alt="strip"
                 className="hotel__services__container__strip1"
+                style={
+                  this.state.isSuitesFloorSelected === false
+                    ? { opacity: 0 }
+                    : null
+                }
               />
+              <div className="hotel__services__container__building__btn__popup">
+                <div className="hotel__services__container__building__btn__popup__heading">
+                  13th Floor
+                </div>
+                <div className="hotel__services__container__building__btn__popup__status">
+                  <span>11/14 Free</span>
+                  <span>Apartment</span>
+                </div>
+              </div>
             </button>
             <button className="heading hotel__services__container__building__btn">
-              3
+              16
+              <input
+                type="radio"
+                name="hotel__services__container__building__btn__section2"
+                id=""
+                // disabled={!this.state.isSuitesFloorSelected}
+                checked={this.state.isSuitesFloorSelected}
+                onChange={() => {
+                  this.setState({
+                    isManagementFloorSelected: false,
+                    isSuitesFloorSelected: true,
+                    isServiceFloorSelected: false,
+                    isShopFloorSelected: false,
+                  });
+                }}
+                className="hotel__services__container__building__btn__input"
+              />
               <img
-                src={strip1}
+                src={strip3}
                 alt="strip"
                 className="hotel__services__container__strip1"
+                style={
+                  this.state.isSuitesFloorSelected === false
+                    ? { opacity: 0 }
+                    : null
+                }
               />
+              <div className="hotel__services__container__building__btn__popup">
+                <div className="hotel__services__container__building__btn__popup__heading">
+                  13th Floor
+                </div>
+                <div className="hotel__services__container__building__btn__popup__status">
+                  <span>11/14 Free</span>
+                  <span>Apartment</span>
+                </div>
+              </div>
             </button>
             <button className="heading hotel__services__container__building__btn">
-              4
+              15
+              <input
+                type="radio"
+                name="hotel__services__container__building__btn__section2"
+                id=""
+                // disabled={!this.state.isSuitesFloorSelected}
+                checked={this.state.isSuitesFloorSelected}
+                onChange={() => {
+                  this.setState({
+                    isManagementFloorSelected: false,
+                    isSuitesFloorSelected: true,
+                    isServiceFloorSelected: false,
+                    isShopFloorSelected: false,
+                  });
+                }}
+                className="hotel__services__container__building__btn__input"
+              />
               <img
-                src={strip1}
+                src={strip4}
                 alt="strip"
                 className="hotel__services__container__strip1"
+                style={
+                  this.state.isSuitesFloorSelected === false
+                    ? { opacity: 0 }
+                    : null
+                }
               />
+              <div className="hotel__services__container__building__btn__popup">
+                <div className="hotel__services__container__building__btn__popup__heading">
+                  13th Floor
+                </div>
+                <div className="hotel__services__container__building__btn__popup__status">
+                  <span>11/14 Free</span>
+                  <span>Apartment</span>
+                </div>
+              </div>
             </button>
             <button className="heading hotel__services__container__building__btn">
-              5
+              14
+              <input
+                type="radio"
+                name="hotel__services__container__building__btn__section2"
+                id=""
+                // disabled={!this.state.isSuitesFloorSelected}
+                checked={this.state.isSuitesFloorSelected}
+                onChange={() => {
+                  this.setState({
+                    isManagementFloorSelected: false,
+                    isSuitesFloorSelected: true,
+                    isServiceFloorSelected: false,
+                    isShopFloorSelected: false,
+                  });
+                }}
+                className="hotel__services__container__building__btn__input"
+              />
               <img
-                src={strip1}
+                src={strip5}
                 alt="strip"
                 className="hotel__services__container__strip1"
+                style={
+                  this.state.isSuitesFloorSelected === false
+                    ? { opacity: 0 }
+                    : null
+                }
               />
+              <div className="hotel__services__container__building__btn__popup">
+                <div className="hotel__services__container__building__btn__popup__heading">
+                  13th Floor
+                </div>
+                <div className="hotel__services__container__building__btn__popup__status">
+                  <span>11/14 Free</span>
+                  <span>Apartment</span>
+                </div>
+              </div>
             </button>
             <button className="heading hotel__services__container__building__btn">
-              6
+              13
+              <input
+                type="radio"
+                name="hotel__services__container__building__btn__section2"
+                id=""
+                // disabled={!this.state.isSuitesFloorSelected}
+                checked={this.state.isSuitesFloorSelected}
+                onChange={() => {
+                  this.setState({
+                    isManagementFloorSelected: false,
+                    isSuitesFloorSelected: true,
+                    isServiceFloorSelected: false,
+                    isShopFloorSelected: false,
+                  });
+                }}
+                className="hotel__services__container__building__btn__input"
+              />
               <img
-                src={strip1}
+                src={strip6}
                 alt="strip"
                 className="hotel__services__container__strip1"
+                style={
+                  this.state.isSuitesFloorSelected === false
+                    ? { opacity: 0 }
+                    : null
+                }
+              />
+              <div className="hotel__services__container__building__btn__popup">
+                <div className="hotel__services__container__building__btn__popup__heading">
+                  13th Floor
+                </div>
+                <div className="hotel__services__container__building__btn__popup__status">
+                  <span>11/14 Free</span>
+                  <span>Apartment</span>
+                </div>
+              </div>
+            </button>
+            <button className="heading hotel__services__container__building__btn">
+              12
+              <input
+                type="radio"
+                name="hotel__services__container__building__btn__section2"
+                id=""
+                // disabled={!this.state.isSuitesFloorSelected}
+                checked={this.state.isSuitesFloorSelected}
+                onChange={() => {
+                  this.setState({
+                    isManagementFloorSelected: false,
+                    isSuitesFloorSelected: true,
+                    isServiceFloorSelected: false,
+                    isShopFloorSelected: false,
+                  });
+                }}
+                className="hotel__services__container__building__btn__input"
+              />
+              <img
+                src={strip7}
+                alt="strip"
+                className="hotel__services__container__strip1"
+                style={
+                  this.state.isSuitesFloorSelected === false
+                    ? { opacity: 0 }
+                    : null
+                }
+              />
+              <div className="hotel__services__container__building__btn__popup">
+                <div className="hotel__services__container__building__btn__popup__heading">
+                  13th Floor
+                </div>
+                <div className="hotel__services__container__building__btn__popup__status">
+                  <span>11/14 Free</span>
+                  <span>Apartment</span>
+                </div>
+              </div>
+            </button>
+            <button className="heading hotel__services__container__building__btn">
+              11
+              <input
+                type="radio"
+                name="hotel__services__container__building__btn__section2"
+                id=""
+                // disabled={!this.state.isSuitesFloorSelected}
+                checked={this.state.isSuitesFloorSelected}
+                onChange={() => {
+                  this.setState({
+                    isManagementFloorSelected: false,
+                    isSuitesFloorSelected: true,
+                    isServiceFloorSelected: false,
+                    isShopFloorSelected: false,
+                  });
+                }}
+                className="hotel__services__container__building__btn__input"
+              />
+              <img
+                src={strip8}
+                alt="strip"
+                className="hotel__services__container__strip1"
+                style={
+                  this.state.isSuitesFloorSelected === false
+                    ? { opacity: 0 }
+                    : null
+                }
+              />
+              <div className="hotel__services__container__building__btn__popup">
+                <div className="hotel__services__container__building__btn__popup__heading">
+                  13th Floor
+                </div>
+                <div className="hotel__services__container__building__btn__popup__status">
+                  <span>11/14 Free</span>
+                  <span>Apartment</span>
+                </div>
+              </div>
+            </button>
+            <button className="heading hotel__services__container__building__btn">
+              10
+              <input
+                type="radio"
+                name="hotel__services__container__building__btn__section2"
+                id=""
+                // disabled={!this.state.isSuitesFloorSelected}
+                checked={this.state.isSuitesFloorSelected}
+                onChange={() => {
+                  this.setState({
+                    isManagementFloorSelected: false,
+                    isSuitesFloorSelected: true,
+                    isServiceFloorSelected: false,
+                    isShopFloorSelected: false,
+                  });
+                }}
+                className="hotel__services__container__building__btn__input"
+              />
+              <img
+                src={strip9}
+                alt="strip"
+                className="hotel__services__container__strip1"
+                style={
+                  this.state.isSuitesFloorSelected === false
+                    ? { opacity: 0 }
+                    : null
+                }
+              />
+              <div className="hotel__services__container__building__btn__popup">
+                <div className="hotel__services__container__building__btn__popup__heading">
+                  13th Floor
+                </div>
+                <div className="hotel__services__container__building__btn__popup__status">
+                  <span>11/14 Free</span>
+                  <span>Apartment</span>
+                </div>
+              </div>
+            </button>
+            <button className="heading hotel__services__container__building__btn">
+              9
+              <input
+                type="radio"
+                name="hotel__services__container__building__btn__section2"
+                id=""
+                // disabled={!this.state.isSuitesFloorSelected}
+                checked={this.state.isSuitesFloorSelected}
+                onChange={() => {
+                  this.setState({
+                    isManagementFloorSelected: false,
+                    isSuitesFloorSelected: true,
+                    isServiceFloorSelected: false,
+                    isShopFloorSelected: false,
+                  });
+                }}
+                className="hotel__services__container__building__btn__input"
+              />
+              <img
+                src={strip10}
+                alt="strip"
+                className="hotel__services__container__strip1"
+                style={
+                  this.state.isSuitesFloorSelected === false
+                    ? { opacity: 0 }
+                    : null
+                }
+              />
+              <div className="hotel__services__container__building__btn__popup">
+                <div className="hotel__services__container__building__btn__popup__heading">
+                  13th Floor
+                </div>
+                <div className="hotel__services__container__building__btn__popup__status">
+                  <span>11/14 Free</span>
+                  <span>Apartment</span>
+                </div>
+              </div>
+            </button>
+            <button className="heading hotel__services__container__building__btn">
+              8
+              <input
+                type="radio"
+                name="hotel__services__container__building__btn__section2"
+                id=""
+                // disabled={!this.state.isSuitesFloorSelected}
+                checked={this.state.isSuitesFloorSelected}
+                onChange={() => {
+                  this.setState({
+                    isManagementFloorSelected: false,
+                    isSuitesFloorSelected: true,
+                    isServiceFloorSelected: false,
+                    isShopFloorSelected: false,
+                  });
+                }}
+                className="hotel__services__container__building__btn__input"
+              />
+              <div className="hotel__services__container__building__btn__popup">
+                <div className="hotel__services__container__building__btn__popup__heading">
+                  13th Floor
+                </div>
+                <div className="hotel__services__container__building__btn__popup__status">
+                  <span>11/14 Free</span>
+                  <span>Apartment</span>
+                </div>
+              </div>
+              <img
+                src={strip11}
+                alt="strip"
+                className="hotel__services__container__strip1"
+                style={
+                  this.state.isSuitesFloorSelected === false
+                    ? { opacity: 0 }
+                    : null
+                }
               />
             </button>
             <button className="heading hotel__services__container__building__btn">
               7
+              <input
+                type="radio"
+                name="hotel__services__container__building__btn__section2"
+                id=""
+                // disabled={!this.state.isSuitesFloorSelected}
+                checked={this.state.isSuitesFloorSelected}
+                onChange={() => {
+                  this.setState({
+                    isManagementFloorSelected: false,
+                    isSuitesFloorSelected: true,
+                    isServiceFloorSelected: false,
+                    isShopFloorSelected: false,
+                  });
+                }}
+                className="hotel__services__container__building__btn__input"
+              />
               <img
-                src={strip1}
+                src={strip12}
                 alt="strip"
                 className="hotel__services__container__strip1"
+                style={
+                  this.state.isSuitesFloorSelected === false
+                    ? { opacity: 0 }
+                    : null
+                }
               />
+              <div className="hotel__services__container__building__btn__popup">
+                <div className="hotel__services__container__building__btn__popup__heading">
+                  13th Floor
+                </div>
+                <div className="hotel__services__container__building__btn__popup__status">
+                  <span>11/14 Free</span>
+                  <span>Apartment</span>
+                </div>
+              </div>
             </button>
             <button className="heading hotel__services__container__building__btn">
-              8
+              6
+              <input
+                type="radio"
+                name="hotel__services__container__building__btn__section2"
+                id=""
+                // disabled={!this.state.isSuitesFloorSelected}
+                checked={this.state.isSuitesFloorSelected}
+                onChange={() => {
+                  this.setState({
+                    isManagementFloorSelected: false,
+                    isSuitesFloorSelected: true,
+                    isServiceFloorSelected: false,
+                    isShopFloorSelected: false,
+                  });
+                }}
+                className="hotel__services__container__building__btn__input"
+              />
               <img
-                src={strip1}
+                src={strip13}
                 alt="strip"
                 className="hotel__services__container__strip1"
+                style={
+                  this.state.isSuitesFloorSelected === false
+                    ? { opacity: 0 }
+                    : null
+                }
               />
+              <div className="hotel__services__container__building__btn__popup">
+                <div className="hotel__services__container__building__btn__popup__heading">
+                  13th Floor
+                </div>
+                <div className="hotel__services__container__building__btn__popup__status">
+                  <span>11/14 Free</span>
+                  <span>Apartment</span>
+                </div>
+              </div>
             </button>
             <button className="heading hotel__services__container__building__btn">
-              9
+              5
+              <input
+                type="radio"
+                name="hotel__services__container__building__btn__section3"
+                id=""
+                // disabled={!this.state.isServiceFloorSelected}
+                checked={this.state.isServiceFloorSelected}
+                onChange={() => {
+                  this.setState({
+                    isManagementFloorSelected: false,
+                    isSuitesFloorSelected: false,
+                    isServiceFloorSelected: true,
+                    isShopFloorSelected: false,
+                  });
+                }}
+                className="hotel__services__container__building__btn__input"
+              />
               <img
-                src={strip1}
+                src={strip14}
                 alt="strip"
                 className="hotel__services__container__strip1"
+                style={
+                  this.state.isServiceFloorSelected === false
+                    ? { opacity: 0 }
+                    : null
+                }
               />
+              <div className="hotel__services__container__building__btn__popup">
+                <div className="hotel__services__container__building__btn__popup__heading">
+                  13th Floor
+                </div>
+                <div className="hotel__services__container__building__btn__popup__status">
+                  <span>11/14 Free</span>
+                  <span>Apartment</span>
+                </div>
+              </div>
             </button>
             <button className="heading hotel__services__container__building__btn">
-              10
+              4
+              <input
+                type="radio"
+                name="hotel__services__container__building__btn__section3"
+                id=""
+                // disabled={!this.state.isServiceFloorSelected}
+                checked={this.state.isServiceFloorSelected}
+                onChange={() => {
+                  this.setState({
+                    isManagementFloorSelected: false,
+                    isSuitesFloorSelected: false,
+                    isServiceFloorSelected: true,
+                    isShopFloorSelected: false,
+                  });
+                }}
+                className="hotel__services__container__building__btn__input"
+              />
               <img
-                src={strip1}
+                src={strip15}
                 alt="strip"
                 className="hotel__services__container__strip1"
+                style={
+                  this.state.isServiceFloorSelected === false
+                    ? { opacity: 0 }
+                    : null
+                }
               />
+              <div className="hotel__services__container__building__btn__popup">
+                <div className="hotel__services__container__building__btn__popup__heading">
+                  13th Floor
+                </div>
+                <div className="hotel__services__container__building__btn__popup__status">
+                  <span>11/14 Free</span>
+                  <span>Apartment</span>
+                </div>
+              </div>
             </button>
             <button className="heading hotel__services__container__building__btn">
-              10
+              3
+              <input
+                type="radio"
+                name="hotel__services__container__building__btn__section3"
+                id=""
+                // disabled={!this.state.isServiceFloorSelected}
+                checked={this.state.isServiceFloorSelected}
+                onChange={() => {
+                  this.setState({
+                    isManagementFloorSelected: false,
+                    isSuitesFloorSelected: false,
+                    isServiceFloorSelected: true,
+                    isShopFloorSelected: false,
+                  });
+                }}
+                className="hotel__services__container__building__btn__input"
+              />
               <img
-                src={strip1}
+                src={strip16}
                 alt="strip"
                 className="hotel__services__container__strip1"
+                style={
+                  this.state.isServiceFloorSelected === false
+                    ? { opacity: 0 }
+                    : null
+                }
               />
+              <div className="hotel__services__container__building__btn__popup">
+                <div className="hotel__services__container__building__btn__popup__heading">
+                  13th Floor
+                </div>
+                <div className="hotel__services__container__building__btn__popup__status">
+                  <span>11/14 Free</span>
+                  <span>Apartment</span>
+                </div>
+              </div>
             </button>
             <button className="heading hotel__services__container__building__btn">
-              11
+              2
+              <input
+                type="radio"
+                name="hotel__services__container__building__btn__section3"
+                id=""
+                // disabled={!this.state.isServiceFloorSelected}
+                checked={this.state.isServiceFloorSelected}
+                onChange={() => {
+                  this.setState({
+                    isManagementFloorSelected: false,
+                    isSuitesFloorSelected: false,
+                    isServiceFloorSelected: true,
+                    isShopFloorSelected: false,
+                  });
+                }}
+                className="hotel__services__container__building__btn__input"
+              />
               <img
-                src={strip1}
+                src={strip17}
                 alt="strip"
                 className="hotel__services__container__strip1"
+                style={
+                  this.state.isServiceFloorSelected === false
+                    ? { opacity: 0 }
+                    : null
+                }
               />
+              <div className="hotel__services__container__building__btn__popup">
+                <div className="hotel__services__container__building__btn__popup__heading">
+                  13th Floor
+                </div>
+                <div className="hotel__services__container__building__btn__popup__status">
+                  <span>11/14 Free</span>
+                  <span>Apartment</span>
+                </div>
+              </div>
             </button>
             <button className="heading hotel__services__container__building__btn">
-              12
+              1
+              <input
+                type="radio"
+                name="hotel__services__container__building__btn__section4"
+                id=""
+                // disabled={!this.state.isShopFloorSelected}
+                checked={this.state.isShopFloorSelected}
+                onChange={() => {
+                  this.setState({
+                    isManagementFloorSelected: false,
+                    isSuitesFloorSelected: false,
+                    isServiceFloorSelected: false,
+                    isShopFloorSelected: true,
+                  });
+                }}
+                className="hotel__services__container__building__btn__input"
+              />
               <img
-                src={strip1}
+                src={strip18}
                 alt="strip"
                 className="hotel__services__container__strip1"
+                style={
+                  this.state.isShopFloorSelected === false
+                    ? { opacity: 0 }
+                    : null
+                }
               />
-            </button>
-            <button className="heading hotel__services__container__building__btn">
-              13
-              <img
-                src={strip1}
-                alt="strip"
-                className="hotel__services__container__strip1"
-              />
-            </button>
-            <button className="heading hotel__services__container__building__btn">
-              14
-              <img
-                src={strip1}
-                alt="strip"
-                className="hotel__services__container__strip1"
-              />
-            </button>
-            <button className="heading hotel__services__container__building__btn">
-              15
-              <img
-                src={strip1}
-                alt="strip"
-                className="hotel__services__container__strip1"
-              />
+              <div className="hotel__services__container__building__btn__popup">
+                <div className="hotel__services__container__building__btn__popup__heading">
+                  13th Floor
+                </div>
+                <div className="hotel__services__container__building__btn__popup__status">
+                  <span>11/14 Free</span>
+                  <span>Apartment</span>
+                </div>
+              </div>
             </button>
           </div>
         </div>
