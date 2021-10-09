@@ -263,7 +263,7 @@ export default class HomeScreen extends Component {
         </div>
         <div className="hotel__services__container">
           <div className="hotel__services__container__content">
-            <div className="hotel__services__container__content__heading">
+            <div className="hotel__services__container__content__heading heading">
               Hotel Services
             </div>
             <div className="hotel__services__container__content__info">
@@ -491,7 +491,7 @@ export default class HomeScreen extends Component {
                 </svg>
               </div>
             </div>
-            <button className="hotel__services__container__content__button">
+            <button className="heading hotel__services__container__content__button">
               View Details
             </button>
             <div className="hotel__services__container__content__gallery">
@@ -518,7 +518,7 @@ export default class HomeScreen extends Component {
             className="hotel__services__container__building"
           />
           <div className="hotel__services__container__building__btns">
-            <button className="hotel__services__container__building__btn">
+            <button className="heading hotel__services__container__building__btn">
               1
               <img
                 src={strip1}
@@ -526,7 +526,7 @@ export default class HomeScreen extends Component {
                 className="hotel__services__container__strip1"
               />
             </button>
-            <button className="hotel__services__container__building__btn">
+            <button className="heading hotel__services__container__building__btn">
               2
               <img
                 src={strip1}
@@ -534,7 +534,7 @@ export default class HomeScreen extends Component {
                 className="hotel__services__container__strip1"
               />
             </button>
-            <button className="hotel__services__container__building__btn">
+            <button className="heading hotel__services__container__building__btn">
               3
               <img
                 src={strip1}
@@ -542,7 +542,7 @@ export default class HomeScreen extends Component {
                 className="hotel__services__container__strip1"
               />
             </button>
-            <button className="hotel__services__container__building__btn">
+            <button className="heading hotel__services__container__building__btn">
               4
               <img
                 src={strip1}
@@ -550,7 +550,7 @@ export default class HomeScreen extends Component {
                 className="hotel__services__container__strip1"
               />
             </button>
-            <button className="hotel__services__container__building__btn">
+            <button className="heading hotel__services__container__building__btn">
               5
               <img
                 src={strip1}
@@ -558,7 +558,7 @@ export default class HomeScreen extends Component {
                 className="hotel__services__container__strip1"
               />
             </button>
-            <button className="hotel__services__container__building__btn">
+            <button className="heading hotel__services__container__building__btn">
               6
               <img
                 src={strip1}
@@ -566,7 +566,7 @@ export default class HomeScreen extends Component {
                 className="hotel__services__container__strip1"
               />
             </button>
-            <button className="hotel__services__container__building__btn">
+            <button className="heading hotel__services__container__building__btn">
               7
               <img
                 src={strip1}
@@ -574,7 +574,7 @@ export default class HomeScreen extends Component {
                 className="hotel__services__container__strip1"
               />
             </button>
-            <button className="hotel__services__container__building__btn">
+            <button className="heading hotel__services__container__building__btn">
               8
               <img
                 src={strip1}
@@ -582,7 +582,7 @@ export default class HomeScreen extends Component {
                 className="hotel__services__container__strip1"
               />
             </button>
-            <button className="hotel__services__container__building__btn">
+            <button className="heading hotel__services__container__building__btn">
               9
               <img
                 src={strip1}
@@ -590,7 +590,7 @@ export default class HomeScreen extends Component {
                 className="hotel__services__container__strip1"
               />
             </button>
-            <button className="hotel__services__container__building__btn">
+            <button className="heading hotel__services__container__building__btn">
               10
               <img
                 src={strip1}
@@ -598,7 +598,7 @@ export default class HomeScreen extends Component {
                 className="hotel__services__container__strip1"
               />
             </button>
-            <button className="hotel__services__container__building__btn">
+            <button className="heading hotel__services__container__building__btn">
               10
               <img
                 src={strip1}
@@ -606,7 +606,7 @@ export default class HomeScreen extends Component {
                 className="hotel__services__container__strip1"
               />
             </button>
-            <button className="hotel__services__container__building__btn">
+            <button className="heading hotel__services__container__building__btn">
               11
               <img
                 src={strip1}
@@ -614,7 +614,7 @@ export default class HomeScreen extends Component {
                 className="hotel__services__container__strip1"
               />
             </button>
-            <button className="hotel__services__container__building__btn">
+            <button className="heading hotel__services__container__building__btn">
               12
               <img
                 src={strip1}
@@ -622,7 +622,7 @@ export default class HomeScreen extends Component {
                 className="hotel__services__container__strip1"
               />
             </button>
-            <button className="hotel__services__container__building__btn">
+            <button className="heading hotel__services__container__building__btn">
               13
               <img
                 src={strip1}
@@ -630,7 +630,7 @@ export default class HomeScreen extends Component {
                 className="hotel__services__container__strip1"
               />
             </button>
-            <button className="hotel__services__container__building__btn">
+            <button className="heading hotel__services__container__building__btn">
               14
               <img
                 src={strip1}
@@ -638,7 +638,7 @@ export default class HomeScreen extends Component {
                 className="hotel__services__container__strip1"
               />
             </button>
-            <button className="hotel__services__container__building__btn">
+            <button className="heading hotel__services__container__building__btn">
               15
               <img
                 src={strip1}
@@ -657,11 +657,11 @@ export default class HomeScreen extends Component {
           <div className="apartment__details__container__wrapper">
             <form className="apartment__details__container__wrapper__content">
               <div className="apartment__details__container__wrapper__content__left">
-                <div className="apartment__details__container__wrapper__content__left__heading">
+                <div className="apartment__details__container__wrapper__content__left__heading heading">
                   Choose your Preferred floor or use filter selection
                 </div>
                 <div className="apartment__details__container__wrapper__content__left__row">
-                  <div className="apartment__details__container__wrapper__content__left__sub__heading">
+                  <div className="apartment__details__container__wrapper__content__left__sub__heading heading">
                     Rooms
                   </div>
                   <select
@@ -677,7 +677,7 @@ export default class HomeScreen extends Component {
                   </select>
                 </div>
                 <div className="apartment__details__container__wrapper__content__left__range">
-                  <div className="apartment__details__container__wrapper__content__left__range__heading">
+                  <div className="apartment__details__container__wrapper__content__left__range__heading heading">
                     Rooms
                   </div>
                   <MultiRangeSlider
@@ -689,7 +689,7 @@ export default class HomeScreen extends Component {
                   />
                 </div>
                 <div className="apartment__details__container__wrapper__content__left__range">
-                  <div className="apartment__details__container__wrapper__content__left__range__heading">
+                  <div className="apartment__details__container__wrapper__content__left__range__heading heading">
                     Rooms
                   </div>
                   <MultiRangeSlider
@@ -700,7 +700,7 @@ export default class HomeScreen extends Component {
                     preventWheel={false}
                   />
                 </div>
-                <button className="apartment__details__container__wrapper__content__left__button">
+                <button className="heading apartment__details__container__wrapper__content__left__button">
                   View Details
                 </button>
               </div>
@@ -718,7 +718,7 @@ export default class HomeScreen extends Component {
                 <BuildingDimensionsEntry />
               </div>
               <div className="apartment__details__container__wrapper__content__right">
-                <div className="apartment__details__container__wrapper__content__right__heading">
+                <div className="apartment__details__container__wrapper__content__right__heading heading">
                   Apartments - Comforts
                 </div>
                 <img
@@ -816,10 +816,10 @@ export default class HomeScreen extends Component {
           />
           <div className="banner__container__content">
             <div className="banner__content__wrapper">
-              <div className="banner__container__content__heading">
+              <div className="banner__container__content__heading heading">
                 Dive Into The Beautiful Realm In Amist
               </div>
-              <button className="banner__container__content__btn">
+              <button className="heading banner__container__content__btn">
                 View Details
               </button>
               <div className="banner__container__content__logo__container">
@@ -841,7 +841,7 @@ export default class HomeScreen extends Component {
           />
           <div className="building__details__container__wrapper">
             <div className="building__details__container__wrapper__content">
-              <div className="building__details__container__wrapper__heading">
+              <div className="building__details__container__wrapper__heading heading">
                 Building Details
               </div>
               <div className="building__details__container__wrapper__heading__line"></div>
@@ -1430,7 +1430,7 @@ export default class HomeScreen extends Component {
         </div>
         <div className="home__features__container">
           <div className="home__features__container__left">
-            <div className="home__features__container__left__heading">
+            <div className="home__features__container__left__heading heading">
               Heading Here
             </div>
             <div className="home__features__container__left__info">
@@ -1445,7 +1445,7 @@ export default class HomeScreen extends Component {
               type specimen book. It has survived not only five centuries,
             </div>
             <div className="home__features__container__left__buttons">
-              <button className="home__features__container__left__button">
+              <button className="heading home__features__container__left__button">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="49.184"
@@ -1476,7 +1476,7 @@ export default class HomeScreen extends Component {
                 </svg>
                 <span>BANQUET</span>
               </button>
-              <button className="home__features__container__left__button">
+              <button className="heading home__features__container__left__button">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="77.082"
@@ -1511,7 +1511,7 @@ export default class HomeScreen extends Component {
                 </svg>
                 <span>INFINITY POOL</span>
               </button>
-              <button className="home__features__container__left__button">
+              <button className="heading home__features__container__left__button">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="54.671"
@@ -1542,7 +1542,7 @@ export default class HomeScreen extends Component {
                 </svg>
                 <span>ENTERTAINMENT</span>
               </button>
-              <button className="home__features__container__left__button">
+              <button className="heading home__features__container__left__button">
                 <svg
                   id="Group_10"
                   data-name="Group 10"
@@ -1627,7 +1627,7 @@ export default class HomeScreen extends Component {
                 </svg>
                 <span>DINE-IN</span>
               </button>
-              <button className="home__features__container__left__button">
+              <button className="heading home__features__container__left__button">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="42.83"
@@ -1664,7 +1664,7 @@ export default class HomeScreen extends Component {
                 </svg>
                 <span>RETAIL AREA</span>
               </button>
-              <button className="home__features__container__left__button">
+              <button className="heading home__features__container__left__button">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="64.953"
@@ -1687,7 +1687,7 @@ export default class HomeScreen extends Component {
                 </svg>
                 <span>FITNESS CLUB</span>
               </button>
-              <button className="home__features__container__left__button">
+              <button className="heading home__features__container__left__button">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="56.584"
@@ -1704,7 +1704,7 @@ export default class HomeScreen extends Component {
                 </svg>
                 <span>LUXURY SUITES</span>
               </button>
-              <button className="home__features__container__left__button">
+              <button className="heading home__features__container__left__button">
                 <svg
                   id="Group_11"
                   data-name="Group 11"
@@ -1829,7 +1829,7 @@ export default class HomeScreen extends Component {
           className="building__container__img"
         />
         <div className="photo__gallery__container">
-          <div className="photo__gallery__container__heading">
+          <div className="photo__gallery__container__heading heading">
             Photo Gallery
           </div>
           <PhotoGallery />
@@ -1845,7 +1845,7 @@ export default class HomeScreen extends Component {
                   className="contact__container__wrapper__left__img"
                 />
                 <div className="contact__container__wrapper__left__wrapper">
-                  <div className="contact__container__wrapper__left__wrapper__heading">
+                  <div className="contact__container__wrapper__left__wrapper__heading heading">
                     Make your investment today
                   </div>
                   <div className="contact__container__wrapper__left__wrapper__info">
@@ -1868,7 +1868,7 @@ export default class HomeScreen extends Component {
                 </div>
               </div>
               <form action="" className="contact__container__wrapper__right">
-                <div className="contact__container__wrapper__right__heading">
+                <div className="contact__container__wrapper__right__heading heading">
                   Request a call back
                 </div>
                 <div className="contact__container__wrapper__right__info">
@@ -1884,7 +1884,7 @@ export default class HomeScreen extends Component {
                   className="contact__container__wrapper__right__input"
                   placeholder="Phone"
                 />
-                <button className="contact__container__wrapper__right__button">
+                <button className="heading contact__container__wrapper__right__button">
                   Send
                 </button>
               </form>

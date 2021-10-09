@@ -186,7 +186,7 @@ export default class HomeScreen extends Component {
               className="transport__container__wrapper__img"
             />
             <div className="transport__container__wrapper__content">
-              <div className="transport__container__wrapper__content__heading">
+              <div className="transport__container__wrapper__content__heading heading">
                 {this.state.servicesCarouselHeading}
               </div>
               <div className="transport__container__wrapper__content__info">
@@ -499,7 +499,7 @@ export default class HomeScreen extends Component {
           />
           <div className="building__details__container__wrapper">
             <div className="building__details__container__wrapper__content">
-              <div className="building__details__container__wrapper__heading">
+              <div className="building__details__container__wrapper__heading heading">
                 Building Details
               </div>
               <div className="building__details__container__wrapper__heading__line"></div>
@@ -1087,7 +1087,7 @@ export default class HomeScreen extends Component {
           />
         </div>
         <div className="photo__gallery__container">
-          <div className="photo__gallery__container__heading">
+          <div className="photo__gallery__container__heading heading">
             Photo Gallery
           </div>
           <PhotoGallery />
@@ -1103,7 +1103,7 @@ export default class HomeScreen extends Component {
                   className="contact__container__wrapper__left__img"
                 />
                 <div className="contact__container__wrapper__left__wrapper">
-                  <div className="contact__container__wrapper__left__wrapper__heading">
+                  <div className="contact__container__wrapper__left__wrapper__heading heading">
                     Make your investment today
                   </div>
                   <div className="contact__container__wrapper__left__wrapper__info">
@@ -1126,7 +1126,7 @@ export default class HomeScreen extends Component {
                 </div>
               </div>
               <form action="" className="contact__container__wrapper__right">
-                <div className="contact__container__wrapper__right__heading">
+                <div className="contact__container__wrapper__right__heading heading">
                   Request a call back
                 </div>
                 <div className="contact__container__wrapper__right__info">
@@ -1142,7 +1142,7 @@ export default class HomeScreen extends Component {
                   className="contact__container__wrapper__right__input"
                   placeholder="Phone"
                 />
-                <button className="contact__container__wrapper__right__button">
+                <button className="heading contact__container__wrapper__right__button">
                   Send
                 </button>
               </form>

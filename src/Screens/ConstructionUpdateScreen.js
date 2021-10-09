@@ -187,7 +187,7 @@ export default class ConstructionUpdateScreen extends Component {
                 <div className="construction__update__container__wrapper_content__carousel__wrapper">
                   <div className="construction__update__container__wrapper_content__carousel__wrapper__content">
                     <div className="construction__update__container__wrapper_content__carousel__left">
-                      <div className="construction__update__container__wrapper_content__carousel__heading">
+                      <div className="construction__update__container__wrapper_content__carousel__heading heading">
                         {this.state.constructionUpdateTitle}
                       </div>
                       <div className="construction__update__container__wrapper_content__carousel__info">
@@ -333,7 +333,7 @@ export default class ConstructionUpdateScreen extends Component {
                 className="plans__container__content__card__img"
               />
               <div className="plans__container__content__card__content">
-                <div className="plans__container__content__card__content__heading">
+                <div className="plans__container__content__card__content__heading heading">
                   Project Name
                 </div>
                 <div className="plans__container__content__card__content__info">
@@ -371,7 +371,7 @@ export default class ConstructionUpdateScreen extends Component {
                 className="plans__container__content__card__img"
               />
               <div className="plans__container__content__card__content">
-                <div className="plans__container__content__card__content__heading">
+                <div className="plans__container__content__card__content__heading heading">
                   Project Name
                 </div>
                 <div className="plans__container__content__card__content__info">
@@ -402,7 +402,7 @@ export default class ConstructionUpdateScreen extends Component {
                   className="contact__container__wrapper__left__img"
                 />
                 <div className="contact__container__wrapper__left__wrapper">
-                  <div className="contact__container__wrapper__left__wrapper__heading">
+                  <div className="contact__container__wrapper__left__wrapper__heading heading">
                     Make your investment today
                   </div>
                   <div className="contact__container__wrapper__left__wrapper__info">
@@ -425,7 +425,7 @@ export default class ConstructionUpdateScreen extends Component {
                 </div>
               </div>
               <form action="" className="contact__container__wrapper__right">
-                <div className="contact__container__wrapper__right__heading">
+                <div className="contact__container__wrapper__right__heading heading">
                   Request a call back
                 </div>
                 <div className="contact__container__wrapper__right__info">
@@ -441,7 +441,7 @@ export default class ConstructionUpdateScreen extends Component {
                   className="contact__container__wrapper__right__input"
                   placeholder="Phone"
                 />
-                <button className="contact__container__wrapper__right__button">
+                <button className="heading contact__container__wrapper__right__button">
                   Send
                 </button>
               </form>

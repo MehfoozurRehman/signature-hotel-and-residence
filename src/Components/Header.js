@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import { Link, useHistory } from "react-router-dom";
-import logo from "../Assets/logo.svg";
+import logo from "../Assets/logo-light.png";
+import logoDark from "../Assets/logo-dark.png";
 
 function Btn() {
   const history = useHistory();
   return (
     <button
       type="button"
-      className="nav__header__btn"
+      className="nav__header__btn heading"
       onClick={() => {
         history.push("/construction_update");
       }}
@@ -49,10 +50,14 @@ export default class Header extends Component {
         className={this.state.isScrolling ? "header header__active" : "header"}
       >
         <Link to="/" className="header__logo">
-          <img src={logo} alt="logo" className="header__logo__img" />
+          <img
+            src={this.state.isScrolling ? logoDark : logo}
+            alt="logo"
+            className="header__logo__img"
+          />
         </Link>
         <button
-          className="menu__btn"
+          className="menu__btn heading"
           onClick={() => {
             if (!this.state.isHeaderOpen) {
               this.setState({

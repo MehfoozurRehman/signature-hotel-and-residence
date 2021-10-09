@@ -156,7 +156,7 @@ export default function AboutUsScreen() {
           </div>
           <div className="main__section__container__about__us">
             <div className="main__section__container__about__us__wrapper">
-              <div className="main__section__container__about__us__heading">
+              <div className="main__section__container__about__us__heading heading">
                 About Us
               </div>
               <div className="main__section__container__about__us__sub__heading">
@@ -230,7 +230,7 @@ export default function AboutUsScreen() {
         />
         <div className="building__details__container__wrapper">
           <div className="building__details__container__wrapper__content">
-            <div className="building__details__container__wrapper__heading">
+            <div className="building__details__container__wrapper__heading heading">
               Building Details
             </div>
             <div className="building__details__container__wrapper__heading__line"></div>
@@ -818,7 +818,9 @@ export default function AboutUsScreen() {
         />
       </div>
       <div className="photo__gallery__container">
-        <div className="photo__gallery__container__heading">Photo Gallery</div>
+        <div className="photo__gallery__container__heading heading">
+          Photo Gallery
+        </div>
         <PhotoGallery />
       </div>
       <Footer />

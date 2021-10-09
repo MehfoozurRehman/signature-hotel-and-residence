@@ -1,13 +1,32 @@
+@font-face {
+  font-family: LaLuxesSerif-Regular;
+  src: url("../Assets/Fonts/LaLuxesSerif-Regular.otf");
+}
+@font-face {
+  font-family: FMBolyarSansPro;
+  src: url("../Assets/Fonts/FMBolyarSansPro-100.ttf"),
+    url("../Assets/Fonts/FMBolyarSansPro-200.ttf"),
+    url("../Assets//Fonts/FMBolyarSansPro-300.ttf"),
+    url("../Assets//Fonts/FMBolyarSansPro-400.ttf"),
+    url("../Assets//Fonts/FMBolyarSansPro-500.ttf"),
+    url("../Assets//Fonts/FMBolyarSansPro-600.ttf"),
+    url("../Assets//Fonts/FMBolyarSansPro-700.ttf"),
+    url("../Assets//Fonts/FMBolyarSansPro-800.ttf"),
+    url("../Assets//Fonts/FMBolyarSansPro-900.ttf");
+}
 *,
 *::after,
 *::before {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+.heading {
+  font-family: LaLuxesSerif-Regular, sans-serif;
+}
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: FMBolyarSansPro, sans-serif;
   overflow-x: hidden;
 }
 li {
@@ -56,6 +75,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 1em 0em;
 }
 .header__logo__img {
   width: 80%;
@@ -87,17 +107,16 @@ a {
   margin-right: 2em;
   font-size: 16px;
   color: #dfb449;
+  background-color: transparent;
+  width: fit-content;
+  height: 45px;
+  padding: 0em 1em;
+  padding-top: 0.5em;
+  border-radius: 10px;
 }
 .nav__header__link:hover {
   transition: 200ms ease-in-out;
   background-color: rgba(0, 0, 0, 0.1);
-}
-.nav__header__link {
-  background-color: transparent;
-  width: fit-content;
-  height: 45px;
-  padding: 1em;
-  border-radius: 10px;
 }
 .nav__header__btn {
   display: flex;
@@ -220,7 +239,7 @@ a {
   align-items: center;
   justify-content: center;
   position: absolute;
-  right: -160px;
+  right: -200px;
   top: 40%;
   z-index: 10;
 }
@@ -347,7 +366,7 @@ a {
 .apartment__details__container__wrapper__content__left__heading::after {
   content: "";
   position: absolute;
-  top: 60px;
+  top: 110px;
   left: 0px;
   width: 50px;
   height: 3px;
@@ -452,12 +471,12 @@ a {
   background-color: #fcf2e8;
 }
 .apartment__details__container__wrapper__content__middle__entry__content__value {
-  font-size: 18px;
+  font-size: 16px;
   color: #fcf2e8;
   font-weight: bold;
 }
 .apartment__details__container__wrapper__content__middle__entry__content__label {
-  font-size: 14px;
+  font-size: 12px;
   color: #fcf2e8;
 }
 .apartment__details__container__wrapper__content__middle__entry__input:hover
@@ -497,7 +516,7 @@ a {
 .apartment__details__container__wrapper__content__right__heading::after {
   content: "";
   position: absolute;
-  top: 30px;
+  top: 73px;
   left: 0px;
   width: 50px;
   height: 3px;
@@ -707,7 +726,7 @@ a {
 }
 .building__details__container__wrapper__heading {
   display: flex;
-  font-size: 40px;
+  font-size: 25px;
   color: #fcf2e8;
 }
 .building__details__container__wrapper__heading__line {
@@ -779,7 +798,7 @@ a {
   justify-content: center;
 }
 .photo__gallery__container__heading {
-  font-size: 40px;
+  font-size: 25px;
   color: #3b3b3b;
   margin-bottom: 2em;
 }
@@ -847,7 +866,7 @@ a {
   margin-bottom: 1em;
 }
 .contact__container__content__form__heading {
-  font-size: 35px;
+  font-size: 25px;
   color: #242424;
 }
 .contact__container__content__form__heading span {
@@ -992,7 +1011,7 @@ a {
   height: 100%;
 }
 .contact__container__wrapper__left__wrapper__heading {
-  font-size: 30px;
+  font-size: 25px;
   color: #530934;
   margin-bottom: 1em;
 }
@@ -1031,7 +1050,7 @@ a {
 .contact__container__wrapper__right__heading::after {
   content: "";
   position: absolute;
-  top: 35px;
+  top: 72px;
   left: 0px;
   width: 70px;
   height: 3px;
@@ -1158,7 +1177,7 @@ a {
   padding: 8em;
 }
 .transport__container__wrapper__content__heading {
-  font-size: 40px;
+  font-size: 25px;
   color: white;
   margin-bottom: 0.5em;
 }
@@ -1222,7 +1241,7 @@ a {
   color: #e4e4e4;
 }
 .transport__container__wrapper__controls__entry__text {
-  font-size: 14px;
+  font-size: 11px;
   color: inherit;
   white-space: nowrap;
   margin-top: 1em;
@@ -1296,7 +1315,7 @@ a {
   width: 75%;
 }
 .construction__update__container__wrapper_content__carousel__heading {
-  font-size: 30px;
+  font-size: 25px;
   color: #ffffff;
   margin-bottom: 0.5em;
 }
@@ -1460,7 +1479,7 @@ a {
   text-align: center;
 }
 .main__section__container__about__us__heading {
-  font-size: 30px;
+  font-size: 25px;
   color: #e4bd56;
 }
 .main__section__container__about__us__sub__heading {
@@ -1519,7 +1538,7 @@ a {
   opacity: 0.2;
 }
 .our__vision__headings {
-  font-size: 30px;
+  font-size: 25px;
   color: #530934;
 }
 .our__vision__sub__heading {
@@ -1641,15 +1660,33 @@ a {
   transform: scale(0);
 }
 .hotel__services__container__building__btn:hover img {
-  transition: 1s ease-in-out;
+  // transition: 1s ease-in-out;
   transform: scale(1);
-  transform-origin: left center;
+  // transform-origin: left bottom;
+  animation: right-animate 1s ease-in-out;
+  transform-origin: left bottom;
 
   // animation-name: fade, slide;
   // animation-duration: 400ms, 500ms;
   // animation-fill-mode: forwards;
   // animation-timing-function: linear, cubic-bezier(0.23, 1, 0.32, 1);
   // animation-delay: 200ms, 0;
+}
+// .right {
+
+// }
+
+@keyframes right-animate {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(20px);
+    transform: scale(1);
+  }
 }
 // @keyframes fade {
 //   0% {
@@ -1691,7 +1728,7 @@ a {
   max-width: 1200px;
 }
 .hotel__services__container__content__heading {
-  font-size: 30px;
+  font-size: 25px;
   color: #dfb449;
   margin-bottom: 1em;
   position: relative;
@@ -1776,7 +1813,7 @@ a {
   margin-right: 2em;
 }
 .home__features__container__left__heading {
-  font-size: 30px;
+  font-size: 25px;
   color: #350520;
   position: relative;
   margin-bottom: 1em;
@@ -2268,7 +2305,7 @@ a {
     width: 90%;
   }
   .banner__container__content__heading {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 @media (max-width: 700px) {
