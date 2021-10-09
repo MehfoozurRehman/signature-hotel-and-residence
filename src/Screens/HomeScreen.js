@@ -77,6 +77,7 @@ function BuildingDimensionsEntry({ defaultChecked }) {
     </div>
   );
 }
+
 function PhotoGallery() {
   const [currentImage, setCurrentImage] = useState(0);
   const [isViewerOpen, setIsViewerOpen] = useState(false);

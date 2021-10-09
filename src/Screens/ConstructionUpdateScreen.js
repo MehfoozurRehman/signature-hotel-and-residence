@@ -4,16 +4,13 @@ import ring from "../Assets/ring.png";
 import contactImg from "../Assets/contactImg.png";
 import plansImage1 from "../Assets/plans/1.png";
 import plansImage2 from "../Assets/plans/2.png";
-import plansImage3 from "../Assets/plans/3.png";
 import photoGalleryImg1 from "../Assets/photo-gallery/1.png";
 import photoGalleryImg2 from "../Assets/photo-gallery/2.png";
 import photoGalleryImg3 from "../Assets/photo-gallery/3.png";
 import photoGalleryImg4 from "../Assets/photo-gallery/4.png";
 import photoGalleryImg5 from "../Assets/photo-gallery/5.png";
 import photoGalleryImg6 from "../Assets/photo-gallery/6.png";
-
 import Header from "../Components/Header";
-import { Link } from "react-router-dom";
 import construction_update__img from "../Assets/construction_update__img.png";
 import work__img from "../Assets/work__img.png";
 import { CircularProgressbar } from "react-circular-progressbar";
