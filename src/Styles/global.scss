@@ -16,6 +16,27 @@ li {
 a {
   text-decoration: none;
 }
+.loading__container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #350520;
+}
+.loading__container__img {
+  width: 200px;
+  height: 200px;
+  animation: rotation 5s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
 .header {
   display: flex;
   flex-direction: row;
@@ -1622,7 +1643,7 @@ a {
 .hotel__services__container__building__btn:hover img {
   transition: 1s ease-in-out;
   transform: scale(1);
-  transform-origin: left bottom;
+  transform-origin: left center;
 
   // animation-name: fade, slide;
   // animation-duration: 400ms, 500ms;
