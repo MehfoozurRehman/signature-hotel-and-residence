@@ -19,7 +19,10 @@ export default function WelcomeScreen() {
         <div className="welcome__container__wrapper">
           <div className="welcome__container__wrapper__content">
             <div className="welcome__container__wrapper__content__left">
-              <Link to="/home" className="welcome__container__wrapper__link">
+              <Link
+                to="/home-commercial"
+                className="welcome__container__wrapper__link"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="48.286"
@@ -82,7 +85,10 @@ export default function WelcomeScreen() {
                 </svg>
                 <span>Commercial</span>
               </Link>
-              <Link to="/home" className="welcome__container__wrapper__link">
+              <Link
+                to="/home-services"
+                className="welcome__container__wrapper__link"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="50.231"
@@ -128,7 +134,10 @@ export default function WelcomeScreen() {
                 </svg>
                 <span>Hotel Services</span>
               </Link>
-              <Link to="/home" className="welcome__container__wrapper__link">
+              <Link
+                to="/home-suites"
+                className="welcome__container__wrapper__link"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="44.287"
@@ -200,7 +209,10 @@ export default function WelcomeScreen() {
                 </svg>
                 <span>Hotel Suites</span>
               </Link>
-              <Link to="/home" className="welcome__container__wrapper__link">
+              <Link
+                to="/home-apartments"
+                className="welcome__container__wrapper__link"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="50.501"

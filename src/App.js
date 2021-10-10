@@ -88,8 +88,17 @@ export default function App() {
             <Route path="/" exact>
               <WelcomeScreen />
             </Route>
-            <Route path="/home">
-              <HomeScreen />
+            <Route path="/home-commercial">
+              <HomeScreen selected="commercial" />
+            </Route>
+            <Route path="/home-services">
+              <HomeScreen selected="services" />
+            </Route>
+            <Route path="/home-suites">
+              <HomeScreen selected="suites" />
+            </Route>
+            <Route path="/home-apartments">
+              <HomeScreen selected="apartments" />
             </Route>
             <Route path="/features">
               <ServicesScreen />
