@@ -691,6 +691,7 @@ a {
   width: 100vw;
   height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 .surrounding__container__img {
   z-index: 2;
@@ -1665,8 +1666,7 @@ a {
 }
 .hotel__services__container {
   width: 100%;
-  height: fit-content;
-  padding: 12em 0em;
+  height: 910px;
   background-color: #350520;
   display: flex;
   align-items: center;
@@ -1674,15 +1674,23 @@ a {
   position: relative;
   overflow-y: hidden;
 }
+.hotel__services__container::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(transparent, #350520);
+}
 .hotel__services__container__building {
   position: absolute;
-  bottom: -50px;
-  right: 220px;
+  top: -60px;
+  right: 0px;
 }
 .hotel__services__container__building__btns {
   position: absolute;
-  top: 334px;
-  right: 740px;
+  top: 158px;
+  right: 520px;
   z-index: 10;
   width: 70px;
   display: flex;
@@ -1805,7 +1813,7 @@ a {
 .hotel__services__container__building__btn:nth-child(18) img {
   top: -170px;
   transform: rotate(1deg);
-  left: -66px;
+  left: -28px;
 }
 
 .hotel__services__container__building__btn__popup {
@@ -1905,6 +1913,22 @@ a {
 .hotel__services__container__content {
   width: 100%;
   max-width: 1366px;
+  padding: 0em 2em;
+  padding-top: 5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hotel__services__container__content__left {
+  flex-direction: column;
+  width: 40%;
+}
+.hotel__services__container__content__right {
+  position: relative;
+  width: 60%;
+  height: 500px;
+  // background-color: #ecce6d;
+  z-index: 100;
 }
 .hotel__services__container__content__heading {
   font-size: 25px;
@@ -1912,7 +1936,7 @@ a {
   margin-bottom: 1em;
   position: relative;
   width: fit-content;
-  max-width: 50%;
+  max-width: 100%;
 }
 .hotel__services__container__content__heading::after {
   content: "";
@@ -1927,13 +1951,13 @@ a {
   font-size: 16px;
   color: #ffffff;
   margin-bottom: 2em;
-  max-width: 50%;
+  max-width: 100%;
 }
 .hotel__services__container__content__icons {
   display: flex;
   align-items: center;
   margin-bottom: 2em;
-  width: 25%;
+  width: 50%;
   justify-content: space-between;
 }
 .hotel__services__container__content__icon {
@@ -1965,7 +1989,7 @@ a {
 .hotel__services__container__content__gallery {
   display: flex;
   align-items: center;
-  width: 50%;
+  width: 100%;
   justify-content: space-between;
 }
 .hotel__services__container__content__gallery__img {
@@ -1982,6 +2006,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 }
 .home__features__container__left {
   width: 50%;
@@ -2119,6 +2144,26 @@ a {
     width: 1200px;
     margin-left: -100px;
   }
+  .hotel__services__container {
+    height: 1500px;
+  }
+  .hotel__services__container__content {
+    flex-direction: column;
+    padding: 0em;
+  }
+  .hotel__services__container__content__left {
+    margin-bottom: 4em;
+    width: 80%;
+  }
+  .hotel__services__container__content__right {
+    height: 700px;
+  }
+  .hotel__services__container__building {
+    right: -100px;
+  }
+  .hotel__services__container__building__btns {
+    right: 420px;
+  }
 }
 @media (max-width: 800px) {
   .welcome__container__wrapper__content__left {
@@ -2127,6 +2172,15 @@ a {
   .main__section__container__img {
     width: 1000px;
     margin-left: -100px;
+  }
+  .hotel__services__container__building {
+    right: -150px;
+    transform: scale(0.7);
+  }
+  .hotel__services__container__building__btns {
+    top: 142px;
+    right: 295px;
+    transform: scale(0.7);
   }
 }
 @media (max-width: 600px) {
@@ -2148,5 +2202,18 @@ a {
   }
   .welcome__container__wrapper__content__right .building__ring {
     display: none;
+  }
+  .hotel__services__container__content__right {
+    height: 400px;
+  }
+  .hotel__services__container__building {
+    top: -180px;
+    right: -180px;
+    transform: scale(0.5);
+  }
+  .hotel__services__container__building__btns {
+    top: 12px;
+    right: 215px;
+    transform: scale(0.5);
   }
 }
