@@ -397,6 +397,7 @@ a {
 .apartment__details__container__wrapper__content {
   width: 100%;
   max-width: 1360px;
+  padding: 2em;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -507,7 +508,6 @@ a {
   height: 100px;
 }
 .apartment__details__container__wrapper__content__middle__entry__content {
-  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -520,12 +520,12 @@ a {
   background-color: #fcf2e8;
 }
 .apartment__details__container__wrapper__content__middle__entry__content__value {
-  font-size: 16px;
+  font-size: 12px;
   color: #fcf2e8;
   font-weight: bold;
 }
 .apartment__details__container__wrapper__content__middle__entry__content__label {
-  font-size: 12px;
+  font-size: 10px;
   color: #fcf2e8;
 }
 .apartment__details__container__wrapper__content__middle__entry__input:hover
@@ -2164,6 +2164,29 @@ a {
   .hotel__services__container__building__btns {
     right: 420px;
   }
+  .apartment__details__container {
+    height: fit-content;
+  }
+  .apartment__details__container__wrapper__content {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .apartment__details__container__wrapper__content__left {
+    min-width: 45%;
+    max-width: 45%;
+  }
+  .apartment__details__container__wrapper__content__middle {
+    min-width: 45%;
+    margin: 0em;
+    max-width: 45%;
+    max-height: 600px;
+  }
+  .apartment__details__container__wrapper__content__right {
+    min-width: 48%;
+    max-width: 48%;
+  }
 }
 @media (max-width: 800px) {
   .welcome__container__wrapper__content__left {
@@ -2181,6 +2204,23 @@ a {
     top: 142px;
     right: 295px;
     transform: scale(0.7);
+  }
+  .apartment__details__container__wrapper__content {
+    flex-direction: column;
+  }
+  .apartment__details__container__wrapper__content__left {
+    min-width: 80%;
+    max-width: 80%;
+  }
+  .apartment__details__container__wrapper__content__middle {
+    min-width: 80%;
+    max-width: 80%;
+    margin: 2em 0em;
+  }
+  .apartment__details__container__wrapper__content__right {
+    min-width: 80%;
+    max-width: 80%;
+    margin-bottom: 2em;
   }
 }
 @media (max-width: 600px) {
@@ -2215,5 +2255,17 @@ a {
     top: 12px;
     right: 215px;
     transform: scale(0.5);
+  }
+  .apartment__details__container__wrapper__content__left {
+    min-width: 95%;
+    max-width: 95%;
+  }
+  .apartment__details__container__wrapper__content__middle {
+    min-width: 95%;
+    max-width: 95%;
+  }
+  .apartment__details__container__wrapper__content__right {
+    min-width: 95%;
+    max-width: 95%;
   }
 }
