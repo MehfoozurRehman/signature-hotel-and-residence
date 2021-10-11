@@ -2437,17 +2437,17 @@ a {
     display: none;
   }
   .hotel__services__container__content__right {
-    height: 400px;
+    height: 200px;
   }
   .hotel__services__container__building {
-    top: -180px;
-    right: -180px;
-    transform: scale(0.5);
+    top: -140px;
+    right: -240px;
+    transform: scale(0.6);
   }
   .hotel__services__container__building__btns {
-    top: 12px;
-    right: 215px;
-    transform: scale(0.5);
+    top: 55px;
+    right: 180px;
+    transform: scale(0.6);
   }
   .apartment__details__container__wrapper__content__left {
     min-width: 95%;
@@ -2486,5 +2486,57 @@ a {
   }
   .contact__container__wrapper__right__heading::after {
     top: 70px;
+  }
+  .hotel__services__container__content__icons {
+    width: 100%;
+  }
+}
+@media (min-width: 1920px) {
+  .welcome__container__wrapper__content__right .building__back {
+    position: absolute;
+    top: 210px;
+    left: 1200px;
+    z-index: 5;
+    transform: scale(1);
+  }
+  .welcome__container__wrapper__content__right .building__front {
+    position: absolute;
+    top: 20px;
+    left: 780px;
+    transform: scale(1);
+    z-index: 20;
+  }
+  .welcome__container__wrapper__content__right .building__ring {
+    position: absolute;
+    top: 230px;
+    left: 1050px;
+    z-index: 10;
+    transform: scale(1);
+    animation: animatering 3s;
+  }
+  @keyframes animatering {
+    from {
+      left: 880px;
+      opacity: 0;
+    }
+    to {
+      left: 1050px;
+      opacity: 1;
+    }
+  }
+  .welcome__container__wrapper__content__right__bottom {
+    background: linear-gradient(#00000000, rgba(0, 0, 0, 0.7), #000000);
+    position: absolute;
+    width: 700px;
+    height: 120px;
+    left: 750px;
+    bottom: 20px;
+    z-index: 30;
+  }
+  .building__details__container {
+    max-height: 800px !important;
+  }
+  .building__details__container__wrapper {
+    max-height: 800px !important;
   }
 }

@@ -296,7 +296,7 @@ export default function WelcomeScreen() {
                     />
                   </g>
                 </svg>
-                <span>Service Apartments</span>
+                <span>Retail Shop</span>
               </Link>
             </div>
             <div className="welcome__container__wrapper__content__right">
@@ -316,6 +316,7 @@ export default function WelcomeScreen() {
                 className="building__ring"
               />
             </div>
+            <div className="welcome__container__wrapper__content__right__bottom"></div>
           </div>
         </div>
       </div>

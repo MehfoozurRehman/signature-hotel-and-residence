@@ -20,7 +20,10 @@ export default function App() {
       <div className="App">
         <Router>
           <div className="side__panel">
-            <Link to="/home" className="side__panel__link">
+            <a
+              href="http://www.africau.edu/images/default/sample.pdf"
+              className="side__panel__link"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="14.032"
@@ -59,9 +62,9 @@ export default function App() {
                 </g>
               </svg>
               Download Brouchure
-            </Link>
+            </a>
             <Link
-              to="/home"
+              to="/location"
               className="side__panel__link side__panel__link__primary"
             >
               <svg

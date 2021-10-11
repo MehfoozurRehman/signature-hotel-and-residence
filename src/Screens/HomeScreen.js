@@ -240,7 +240,7 @@ export default class HomeScreen extends Component {
                     className="main__section__container__wrap__link__img"
                   />
                   <div className="main__section__container__wrap__link__text">
-                    Service Apartments
+                    Retail Shop
                   </div>
                 </Link>
               </div>
@@ -267,7 +267,7 @@ export default class HomeScreen extends Component {
                   : this.props.selected === "services"
                   ? "Hotel Suites"
                   : this.props.selected === "apartments"
-                  ? "Services Apartments"
+                  ? "Retail Shop"
                   : null}
               </div>
               <div className="hotel__services__container__content__info">
