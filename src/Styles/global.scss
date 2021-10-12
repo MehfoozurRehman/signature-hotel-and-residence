@@ -2106,6 +2106,10 @@ a {
   margin-right: -50px;
 }
 @media (max-width: 1360px) {
+  .map__container__img {
+    height: 800px !important;
+  }
+
   .welcome__container__img {
     margin-top: 0em;
     height: 100% !important;
