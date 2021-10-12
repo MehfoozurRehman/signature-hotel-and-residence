@@ -1194,7 +1194,7 @@ export default class HomeScreen extends Component {
                       defaultChecked={true}
                     />
 
-                    <div className="apartment__details__container__wrapper__content_right__tabs__entry__content">
+                    <div className="apartment__details__container__wrapper__content_right__tabs__entry__content heading">
                       Visual
                     </div>
                   </div>
@@ -1204,7 +1204,7 @@ export default class HomeScreen extends Component {
                       className="apartment__details__container__wrapper__content_right__tabs__entry__input"
                       name="apartment__details__container__wrapper__content_right__tabs__entry__input"
                     />
-                    <div className="apartment__details__container__wrapper__content_right__tabs__entry__content">
+                    <div className="apartment__details__container__wrapper__content_right__tabs__entry__content heading">
                       Plan
                     </div>
                   </div>
@@ -1215,7 +1215,7 @@ export default class HomeScreen extends Component {
                       name="apartment__details__container__wrapper__content_right__tabs__entry__input"
                     />
 
-                    <div className="apartment__details__container__wrapper__content_right__tabs__entry__content">
+                    <div className="apartment__details__container__wrapper__content_right__tabs__entry__content heading">
                       Flor
                     </div>
                   </div>

@@ -37,6 +37,7 @@ a {
 }
 .App {
   width: 100vw;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -599,6 +600,7 @@ a {
   border-radius: 50px;
   background-color: transparent;
   height: 50px;
+  font-size: 16px;
   color: #fcf2e8;
   display: flex;
   align-items: center;
@@ -2174,7 +2176,7 @@ a {
     margin-left: -100px;
   }
   .hotel__services__container {
-    height: 1500px;
+    height: 1370px;
   }
   .hotel__services__container__content {
     flex-direction: column;
@@ -2488,6 +2490,43 @@ a {
     top: 70px;
   }
   .hotel__services__container__content__icons {
+    width: 100%;
+  }
+  .main__section__container__wrap__link__text {
+    font-size: 12px;
+  }
+  .hotel__services__container__content__info {
+    font-size: 12px;
+  }
+  .apartment__details__container__wrapper__content__left__heading::after {
+    top: 125px;
+  }
+  .apartment__details__container__wrapper__content_right__tabs__entry__content {
+    font-size: 14px;
+  }
+  .apartment__details__container__wrapper__content__right__data__row__label {
+    font-size: 12px;
+    color: #242424;
+  }
+  .apartment__details__container__wrapper__content__right__data__row__value {
+    font-size: 13px;
+    color: #530934;
+    font-weight: bold;
+  }
+  .home__features__container__left {
+    margin-left: 3em;
+  }
+  .home__features__container__left__buttons {
+    justify-content: space-between;
+    margin-right: 1em;
+  }
+  .home__features__container__left__button {
+    margin-right: 0em;
+  }
+  .contact__container__wrapper__left__wrapper__heading::after {
+    top: 65px;
+  }
+  .footer__container img {
     width: 100%;
   }
 }
