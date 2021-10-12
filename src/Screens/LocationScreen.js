@@ -126,7 +126,7 @@ export default class HomeScreen extends Component {
               <div className="contact__container__content__form__right">
                 <div className="contact__container__content__form__right__map">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217759.48983069125!2d74.1943041387545!3d31.483156883765346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190483e58107d9%3A0xc23abe6ccc7e2462!2sLahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1633512469580!5m2!1sen!2s"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6647.4614649203295!2d72.86080421597495!3d33.58633989735699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df99edef0f439f%3A0xa1539f327d8b527a!2sSignature%20Hotels%20%26%20Residence!5e0!3m2!1sen!2s!4v1634017070096!5m2!1sen!2s"
                     loading="lazy"
                   ></iframe>
                   <div className="contact__container__content__form__right__bottom__content">

@@ -2573,9 +2573,11 @@ a {
     z-index: 30;
   }
   .building__details__container {
-    max-height: 800px !important;
+    min-height: 700px !important;
+    max-height: 700px !important;
   }
   .building__details__container__wrapper {
-    max-height: 800px !important;
+    max-height: 700px !important;
+    min-height: 700px !important;
   }
 }
