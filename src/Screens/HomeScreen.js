@@ -177,6 +177,14 @@ export default class HomeScreen extends Component {
               <div className="main__section__container__wrap__links">
                 <Link
                   to="/home-commercial"
+                  onClick={() => {
+                    this.setState({
+                      isManagementFloorSelected: true,
+                      isSuitesFloorSelected: false,
+                      isServiceFloorSelected: false,
+                      isShopFloorSelected: false,
+                    });
+                  }}
                   className={
                     this.state.isManagementFloorSelected
                       ? "main__section__container__wrap__link main__section__container__wrap__link__active"
@@ -194,6 +202,14 @@ export default class HomeScreen extends Component {
                 </Link>
                 <Link
                   to="/home-services"
+                  onClick={() => {
+                    this.setState({
+                      isManagementFloorSelected: false,
+                      isSuitesFloorSelected: false,
+                      isServiceFloorSelected: true,
+                      isShopFloorSelected: false,
+                    });
+                  }}
                   className={
                     this.state.isServiceFloorSelected
                       ? "main__section__container__wrap__link main__section__container__wrap__link__active"
@@ -211,6 +227,14 @@ export default class HomeScreen extends Component {
                 </Link>
                 <Link
                   to="/home-suites"
+                  onClick={() => {
+                    this.setState({
+                      isManagementFloorSelected: false,
+                      isSuitesFloorSelected: true,
+                      isServiceFloorSelected: false,
+                      isShopFloorSelected: false,
+                    });
+                  }}
                   className={
                     this.state.isSuitesFloorSelected
                       ? "main__section__container__wrap__link main__section__container__wrap__link__active"
@@ -228,6 +252,14 @@ export default class HomeScreen extends Component {
                 </Link>
                 <Link
                   to="/home-apartments"
+                  onClick={() => {
+                    this.setState({
+                      isManagementFloorSelected: false,
+                      isSuitesFloorSelected: false,
+                      isServiceFloorSelected: false,
+                      isShopFloorSelected: true,
+                    });
+                  }}
                   className={
                     this.state.isShopFloorSelected
                       ? "main__section__container__wrap__link main__section__container__wrap__link__active"
