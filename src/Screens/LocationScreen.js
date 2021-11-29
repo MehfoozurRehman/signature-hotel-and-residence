@@ -26,51 +26,43 @@ export default class HomeScreen extends Component {
             <div className="map__container__details">
               <div className="map__container__details__entry">
                 <div className="map__container__details__entry__label">
-                  New Airport
+                  NEW INTERNATIONAL AIRPORT
                 </div>
                 <div className="map__container__details__entry__value">2km</div>
               </div>
               <div className="map__container__details__entry">
                 <div className="map__container__details__entry__label">
-                  New Airport
+                  MOTORWAY M1 & M2
                 </div>
-                <div className="map__container__details__entry__value">2km</div>
+                <div className="map__container__details__entry__value">
+                  300km
+                </div>
               </div>
               <div className="map__container__details__entry">
                 <div className="map__container__details__entry__label">
-                  New Airport
+                  METRO STATION
                 </div>
-                <div className="map__container__details__entry__value">2km</div>
+                <div className="map__container__details__entry__value">0km</div>
               </div>
               <div className="map__container__details__entry">
                 <div className="map__container__details__entry__label">
-                  New Airport
+                  RING ROAD 5 km
                 </div>
-                <div className="map__container__details__entry__value">2km</div>
+                <div className="map__container__details__entry__value">5km</div>
               </div>
               <div className="map__container__details__entry">
                 <div className="map__container__details__entry__label">
-                  New Airport
+                  SRINAGAR HIGHWAY
                 </div>
-                <div className="map__container__details__entry__value">2km</div>
+                <div className="map__container__details__entry__value">0km</div>
               </div>
               <div className="map__container__details__entry">
                 <div className="map__container__details__entry__label">
-                  New Airport
+                  CPEC ROAD
                 </div>
-                <div className="map__container__details__entry__value">2km</div>
-              </div>
-              <div className="map__container__details__entry">
-                <div className="map__container__details__entry__label">
-                  New Airport
+                <div className="map__container__details__entry__value">
+                  15 min
                 </div>
-                <div className="map__container__details__entry__value">2km</div>
-              </div>
-              <div className="map__container__details__entry">
-                <div className="map__container__details__entry__label">
-                  New Airport
-                </div>
-                <div className="map__container__details__entry__value">2km</div>
               </div>
             </div>
           </div>

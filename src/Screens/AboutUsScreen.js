@@ -94,13 +94,10 @@ export default class AboutUsScreen extends Component {
                   About Us
                 </div>
                 <div className="main__section__container__about__us__sub__heading">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, Lorem
-                  Ipsum is simply dummy text of the printing and typesetting
-                  industry.
+                  SIGNATURE HOTEL AND RESIDENCE IS ONE OF THE DYNAMIC AND
+                  VERSATILE PROJECTS OF J7 GROUP, LOCATED AT TOP CITY 01,
+                  ISLAMABAD. IT IS THE SOLE 5-STAR OPULENT HOTEL NEAREST &
+                  ACCESSIBLE TO NEW ISLAMABAD INTERNATIONAL AIRPORT.
                 </div>
               </div>
             </div>

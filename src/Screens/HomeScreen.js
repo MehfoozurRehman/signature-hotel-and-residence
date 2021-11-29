@@ -1308,7 +1308,7 @@ export default class HomeScreen extends Component {
           <div className="banner__container__content">
             <div className="banner__content__wrapper">
               <div className="banner__container__content__heading heading">
-                Dive Into The Beautiful Realm In Amist
+                A PLACE WHERE HOSPITALITY WELCOMES YOU.
               </div>
               <button className="heading banner__container__content__btn">
                 View Details
@@ -2261,7 +2261,7 @@ export default class HomeScreen extends Component {
             <div className="surrounding__container__wrapper__details">
               <div className="surrounding__container__wrapper__details__entry">
                 <div className="surrounding__container__wrapper__details__entry__label">
-                  New Airport
+                  NEW INTERNATIONAL AIRPORT
                 </div>
                 <div className="surrounding__container__wrapper__details__entry__value">
                   2km
@@ -2269,50 +2269,42 @@ export default class HomeScreen extends Component {
               </div>
               <div className="surrounding__container__wrapper__details__entry">
                 <div className="surrounding__container__wrapper__details__entry__label">
-                  New Airport
+                  MOTORWAY M1 & M2
                 </div>
                 <div className="surrounding__container__wrapper__details__entry__value">
-                  2km
+                  300km
                 </div>
               </div>
               <div className="surrounding__container__wrapper__details__entry">
                 <div className="surrounding__container__wrapper__details__entry__label">
-                  New Airport
+                  METRO STATION
                 </div>
                 <div className="surrounding__container__wrapper__details__entry__value">
-                  2km
+                  0km
                 </div>
               </div>
               <div className="surrounding__container__wrapper__details__entry">
                 <div className="surrounding__container__wrapper__details__entry__label">
-                  New Airport
+                  RING ROAD
                 </div>
                 <div className="surrounding__container__wrapper__details__entry__value">
-                  2km
+                  5km
                 </div>
               </div>
               <div className="surrounding__container__wrapper__details__entry">
                 <div className="surrounding__container__wrapper__details__entry__label">
-                  New Airport
+                  SRINAGAR HIGHWAY
                 </div>
                 <div className="surrounding__container__wrapper__details__entry__value">
-                  2km
+                  0km
                 </div>
               </div>
               <div className="surrounding__container__wrapper__details__entry">
                 <div className="surrounding__container__wrapper__details__entry__label">
-                  New Airport
+                  CPEC ROAD
                 </div>
                 <div className="surrounding__container__wrapper__details__entry__value">
-                  2km
-                </div>
-              </div>
-              <div className="surrounding__container__wrapper__details__entry">
-                <div className="surrounding__container__wrapper__details__entry__label">
-                  New Airport
-                </div>
-                <div className="surrounding__container__wrapper__details__entry__value">
-                  2km
+                  15 min
                 </div>
               </div>
             </div>

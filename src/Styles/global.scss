@@ -727,16 +727,15 @@ a {
 }
 .surrounding__container__wrapper__details__entry {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   margin: 1em 0em;
 }
 .surrounding__container__wrapper__details__entry__label {
-  font-size: 18px;
+  font-size: 14px;
   color: #dfb449;
 }
 .surrounding__container__wrapper__details__entry__value {
-  font-size: 18px;
+  font-size: 14px;
   color: #e4e4e4;
 }
 .building__details__container {
@@ -1664,7 +1663,6 @@ a {
 }
 .map__container__details__entry {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   margin-bottom: 1em;
 }

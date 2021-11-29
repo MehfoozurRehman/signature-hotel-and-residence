@@ -105,7 +105,7 @@ export default class HomeScreen extends Component {
       isHeaderOpen: window.innerWidth > 1000,
       servicesCarouselHeading: "Transport",
       servicesCarouselContent:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
+        "Signature Hotels provide you a luxury transportation from the hotel doorstep. Travel anywhere at anytime wherever you go from Signature Hotels.",
       services__background__Img: services__background__Img1,
     };
   }
@@ -161,7 +161,7 @@ export default class HomeScreen extends Component {
                 this.setState({
                   servicesCarouselHeading: "Fitness Club",
                   servicesCarouselContent:
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
+                    "EMBRACE YOUR FITNESS, WELL-BEING AND SELF, AN ULTRA-MODERN WELLNESS AREA EQUIPPED WITH HIGH CLASS GYM EQUIPMENT, SWIMMING POOL, JACUZZI AND SAUNA. SIGNATURE HOTELS HAVE EVERYTHING TO KEEP YOU BOOSTED FOR GOING ON.",
                   services__background__Img: services__background__Img1,
                 });
               }}
@@ -241,7 +241,7 @@ export default class HomeScreen extends Component {
                 this.setState({
                   servicesCarouselHeading: "Transport",
                   servicesCarouselContent:
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
+                    "Signature Hotels provide you a luxury transportation from the hotel doorstep. Travel anywhere at anytime wherever you go from Signature Hotels.",
                   services__background__Img: services__background__Img1,
                 });
               }}
@@ -282,7 +282,7 @@ export default class HomeScreen extends Component {
                 this.setState({
                   servicesCarouselHeading: "Infinity Pool",
                   servicesCarouselContent:
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+                    "INFINITY POOL DIVE AND SWIM AT BREATHTAKING WORLD-CLASS INFINITY POOLS AND MAKE YOUR DAY REVIVING, REJUVENATING AND ENERGETIC AT SIGNATURE HOTELS AND RESIDENCE.",
                   services__background__Img: services__background__Img1,
                 });
               }}
@@ -418,7 +418,7 @@ export default class HomeScreen extends Component {
                 this.setState({
                   servicesCarouselHeading: "Dine-In",
                   servicesCarouselContent:
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
+                    "GIVE YOUR PALATE A TASTE OF SIGNATURE’S FINE DINE RESTAURANTS. SIGNATURE HOTELS WILL PROVIDE THE RESTAURANTS THAT GIVES YOU A LUSCIOUS AND SCRUMPTIOUS TASTE OF BOTH LOCAL AND INTERNATIONAL CUSINE FOOD.",
                   services__background__Img: services__background__Img1,
                 });
               }}
