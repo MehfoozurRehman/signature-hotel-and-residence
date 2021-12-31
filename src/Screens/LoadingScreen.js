@@ -5,6 +5,7 @@ export default function LoadingScreen() {
   return (
     <div className="loading__container">
       <img
+        loading="lazy"
         src={ringforbuilding}
         alt="ringforbuilding"
         className="loading__container__img"
