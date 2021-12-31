@@ -15,7 +15,6 @@ export const getFormattedNumber = (originalPrice) => {
   return amount.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
 };
 export const priceInThousand = (number, decimals, recursiveCall) => {
-  debugger;
   const decimalPoints = decimals || 2;
   const noOfLakhs = number / 100000;
   let displayStr;

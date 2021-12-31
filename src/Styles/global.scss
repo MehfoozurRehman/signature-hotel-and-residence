@@ -2548,8 +2548,9 @@ a {
   .welcome__container__wrapper__content__right .building__ring {
     display: none;
   }
+
   .hotel__services__container__content__right {
-    height: 200px;
+    height: 650px;
   }
   .hotel__services__container__building {
     top: -140px;
@@ -2608,6 +2609,7 @@ a {
   .hotel__services__container__content__info {
     font-size: 12px;
   }
+
   .apartment__details__container__wrapper__content__left__heading::after {
     top: 125px;
   }
@@ -2638,6 +2640,17 @@ a {
   }
   .footer__container img {
     width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .apartment__details__container__wrapper__content__left__heading::after {
+    font-size: 20px;
+    top: 84px;
+  }
+  .apartment__details__container__wrapper__content__left__heading {
+    font-size: 20px;
+    margin-bottom: 2em !important;
+    margin: 0;
   }
 }
 @media (min-width: 1920px) {

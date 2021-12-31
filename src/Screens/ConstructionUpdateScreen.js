@@ -75,7 +75,6 @@ export default class ConstructionUpdateScreen extends Component {
           if (result.length > 0) {
             let unsortedMilestoneList = result;
 
-            debugger;
             unsortedMilestoneList.sort(
               (a, b) =>
                 Date.parse(a.milestone_expected_completion_date.toString()) -
@@ -118,7 +117,6 @@ export default class ConstructionUpdateScreen extends Component {
       });
       return null;
     } else if (/^[0-9]{9,11}$/.test(this.state.phone) === false) {
-      debugger;
       CustomError("Invalid Phone Number");
       this.setState({
         isLoading: false,

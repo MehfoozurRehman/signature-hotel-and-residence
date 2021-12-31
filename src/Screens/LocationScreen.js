@@ -43,7 +43,6 @@ export default class LocationScreen extends Component {
   };
 
   resetInoutFields = () => {
-    debugger;
     this.setState({
       name: "",
       phone: "",
@@ -60,9 +59,8 @@ export default class LocationScreen extends Component {
     });
     let validPhoneNumber = /^[0-9]{9,11}$/.test(this.state.phone);
     let validEmail = validator.isEmail(this.state.email);
-    debugger;
+
     if (!validPhoneNumber || !validEmail) {
-      debugger;
       if (!validPhoneNumber) CustomError("Invalid Phone Number");
       this.setState({
         isLoading: false,

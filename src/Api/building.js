@@ -7,7 +7,6 @@ export function GetAllUnitsByFilter(
   maxArea,
   unitType
 ) {
-  debugger;
   if (unitType !== null)
     return axios.get(
       process.env.REACT_APP_BASEURL +
